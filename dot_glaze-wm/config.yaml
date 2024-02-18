@@ -14,15 +14,14 @@ general:
   show_floating_on_top: false
   focus_border_color: "#ffa752"
 
-
 bar:
-  height: "30px"
+  height: "25px"
   position: "top"
   opacity: 1.0
   background: "#20242cc4"
   foreground: "#ffffff"
   font_family: "Segoe UI"
-  font_size: "13px"
+  font_size: "11px"
   padding: "4px 6px"
   offset_x: "0"
   offset_y: "0"
@@ -120,6 +119,10 @@ binding_modes:
       # Press enter/escape to return to default keybindings.
       - command: "binding mode none"
         bindings: ["Escape", "Enter"]
+  - name: "vscode"
+    keybindings:
+      - command: "binding mode none"
+        bindings: ["Alt+Shift+V"]
 
 keybindings:
   # Shift focus in a given direction.
@@ -157,6 +160,9 @@ keybindings:
   - command: "binding mode resize"
     binding: "Alt+R"
 
+  - command: "binding mode vscode"
+    binding: "Alt+Shift+V"
+
   # Change tiling direction. This determines where new tiling windows will be inserted.
   - command: "tiling direction toggle"
     binding: "Alt+V"
@@ -193,26 +199,6 @@ keybindings:
   # to start Windows Terminal and Git Bash respectively.
   - command: "exec wt"
     binding: "Alt+Enter"
-      #  - command: "exec 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'"
-      #    binding: "LWin+1"
-      #  - command: "exec 'C:\\Program Files\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE'"
-      #    binding: "LWin+2"
-      #  - command: "exec 'C:\\Program Files\\Royal TS V6\\RoyalTS.exe'"
-      #    binding: "LWin+3"
-      #  - command: "exec 'C:\\ProgramData\\Shortcuts\\WhatsApp - Shortcut.lnk'"
-      #    binding: "LWin+4"
-      #  - command: "exec 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio 2022.lnk'"
-      #    binding: "LWin+5"
-      #  - command: "exec 'C:\\Users\\dgrav\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code\\Visual Studio Code.lnk'"
-      #    binding: "LWin+6"
-      #  - command: "exec 'C:\\Users\\dgrav\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Playnite\\Playnite.lnk'"
-      #    binding: "LWin+7"
-      #  - command: "exec 'C:\\Users\\dgrav\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Discord Inc\\Discord.lnk'"
-      #    binding: "LWin+8"
-      #  - command: "exec wt"
-      #    binding: "LWin+9"
-      #  - command: "exec 'C:\\ProgramData\\Shortcuts\\Spotify - Shortcut.lnk'"
-      #    binding: "LWin+0"
      
   # Focus the workspace that last had focus.
   - command: "focus workspace recent"
