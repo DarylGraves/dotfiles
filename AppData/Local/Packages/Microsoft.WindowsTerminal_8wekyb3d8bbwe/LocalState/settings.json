@@ -8,15 +8,22 @@
             "keys": "ctrl+v"
         },
         {
+            "command": 
+            {
+                "action": "prevTab"
+            },
+            "keys": "ctrl+shift+tab"
+        },
+        {
             "command": "closePane",
             "keys": "alt+shift+w"
         },
         {
             "command": 
             {
-                "action": "prevTab"
+                "action": "newTab"
             },
-            "keys": "ctrl+shift+tab"
+            "keys": "ctrl+t"
         },
         {
             "command": 
@@ -29,20 +36,9 @@
         {
             "command": 
             {
-                "action": "newTab"
+                "action": "scrollDown"
             },
-            "keys": "ctrl+t"
-        },
-        {
-            "command": 
-            {
-                "action": "renameTab"
-            },
-            "keys": "ctrl+shift+n"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "keys": "ctrl+down"
         },
         {
             "command": 
@@ -54,19 +50,19 @@
             "keys": "alt+shift+d"
         },
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": 
             {
-                "action": "scrollDown"
+                "action": "renameTab"
             },
-            "keys": "ctrl+down"
+            "keys": "ctrl+shift+n"
         },
         {
             "command": "unbound",
             "keys": "alt+shift+r"
-        },
-        {
-            "command": "scrollUpPage",
-            "keys": "ctrl+shift+up"
         },
         {
             "command": 
@@ -74,6 +70,18 @@
                 "action": "closeTab"
             },
             "keys": "ctrl+w"
+        },
+        {
+            "command": "scrollUp",
+            "keys": "ctrl+k"
+        },
+        {
+            "command": "scrollDown",
+            "keys": "ctrl+j"
+        },
+        {
+            "command": "scrollUpPage",
+            "keys": "ctrl+shift+up"
         },
         {
             "command": "scrollDownPage",
@@ -162,6 +170,12 @@
                 "hidden": true,
                 "name": "Visual Studio Debug Console",
                 "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+                "hidden": false,
+                "name": "kali-linux",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
