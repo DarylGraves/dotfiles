@@ -21,5 +21,15 @@ set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
+" Cosmetics
 syntax enable
 set relativenumber
+set autoindent
+set hlsearch
+set ignorecase 
+set ruler
+
+" Remove highlighting
+autocmd CursorMoved * set nohlsearch
+nnoremap n n:set hlsearch<cr>
+nnoremap N N:set hlsearch<cr>

@@ -72,13 +72,6 @@
             "keys": "alt+shift+r"
         },
         {
-            "command": 
-            {
-                "action": "closeTab"
-            },
-            "keys": "ctrl+w"
-        },
-        {
             "command": "scrollDownPage",
             "keys": "ctrl+shift+down"
         },
