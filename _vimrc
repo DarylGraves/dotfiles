@@ -21,4 +21,4 @@ set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
 
 syntax enable
-set number
+set relativenumber
