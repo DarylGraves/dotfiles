@@ -2,6 +2,7 @@
 let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[3 q"
 let &t_EI = "\<Esc>[2 q"
+let &t_ti ..= "\e[2 q"
 
 if !isdirectory(expand("~/.vim/backup"))
     silent! call mkdir(expand("~/.vim/backup"), "p")

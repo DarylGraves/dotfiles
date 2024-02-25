@@ -34,22 +34,6 @@
             "keys": "ctrl+c"
         },
         {
-            "command": 
-            {
-                "action": "scrollDown"
-            },
-            "keys": "ctrl+down"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
-        },
-        {
             "command": "find",
             "keys": "ctrl+shift+f"
         },
@@ -59,6 +43,29 @@
                 "action": "renameTab"
             },
             "keys": "ctrl+shift+n"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollDown"
+            },
+            "keys": "ctrl+down"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollDown"
+            },
+            "keys": "ctrl+j"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
         },
         {
             "command": "unbound",
@@ -72,20 +79,26 @@
             "keys": "ctrl+w"
         },
         {
-            "command": "scrollUp",
+            "command": "scrollDownPage",
+            "keys": "ctrl+shift+down"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollUp"
+            },
             "keys": "ctrl+k"
         },
         {
-            "command": "scrollDown",
-            "keys": "ctrl+j"
+            "command": 
+            {
+                "action": "scrollUp"
+            },
+            "keys": "ctrl+up"
         },
         {
             "command": "scrollUpPage",
             "keys": "ctrl+shift+up"
-        },
-        {
-            "command": "scrollDownPage",
-            "keys": "ctrl+shift+down"
         },
         {
             "command": 
@@ -97,13 +110,6 @@
         {
             "command": "openTabColorPicker",
             "keys": "ctrl+shift+c"
-        },
-        {
-            "command": 
-            {
-                "action": "scrollUp"
-            },
-            "keys": "ctrl+up"
         }
     ],
     "copyFormatting": "none",
@@ -141,7 +147,7 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "colorScheme": "Sundried",
+                "colorScheme": "ayu",
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
@@ -154,16 +160,15 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
+                "colorScheme": "Sundried",
+                "font": 
+                {
+                    "size": 10.0
+                },
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
                 "name": "Ubuntu",
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-            },
-            {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": true,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
             },
             {
                 "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
@@ -479,6 +484,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
+        },
+        {
+            "background": "#0F1419",
+            "black": "#000000",
+            "blue": "#36A3D9",
+            "brightBlack": "#323232",
+            "brightBlue": "#68D5FF",
+            "brightCyan": "#C7FFFD",
+            "brightGreen": "#EAFE84",
+            "brightPurple": "#FFA3AA",
+            "brightRed": "#FF6565",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFF779",
+            "cursorColor": "#F29718",
+            "cyan": "#95E6CB",
+            "foreground": "#E6E1CF",
+            "green": "#B8CC52",
+            "name": "ayu",
+            "purple": "#F07178",
+            "red": "#FF3333",
+            "selectionBackground": "#253340",
+            "white": "#FFFFFF",
+            "yellow": "#E7C547"
         },
         {
             "background": "#0F191C",
