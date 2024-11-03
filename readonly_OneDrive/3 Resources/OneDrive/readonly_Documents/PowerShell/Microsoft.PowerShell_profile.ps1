@@ -9,6 +9,7 @@ $RequiredModules = @("CompletionPredictor", "Terminal-Icons", "ImportExcel", "PS
 
 foreach ($Module in $RequiredModules) {
 	$ModuleInstalled = Get-Module -ListAvailable -SkipEditionCheck -ErrorAction SilentlyContinue -Name $Module
+
 	if ($null -eq $ModuleInstalled) {
 		Install-Module -Name $Module -Scope CurrentUser -Force
 	}
