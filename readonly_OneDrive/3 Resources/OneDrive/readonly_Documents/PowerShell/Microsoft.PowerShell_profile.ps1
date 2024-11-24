@@ -5,16 +5,32 @@ Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 #################################################
 # Modules
 #################################################
+$RegistryPath = "HKCU:\Software\PowerShell\Profile\InstalledModules"
 $RequiredModules = @("CompletionPredictor", "Terminal-Icons", "ImportExcel", "PSWriteHTML", "PwshSpectreConsole")
 
-foreach ($Module in $RequiredModules) {
-	$ModuleInstalled = Get-Module -ListAvailable -SkipEditionCheck -ErrorAction SilentlyContinue -Name $Module
+# New install, create registry folder
+if (!(Test-Path -Path $RegistryPath)) {
+	New-Item -Path $RegistryPath -Force
+}
 
-	if ($null -eq $ModuleInstalled) {
-		Install-Module -Name $Module -Scope CurrentUser -Force
+foreach ($Module in $RequiredModules) {
+	# Create value
+	$ModuleInstalled = (Get-ItemProperty -Path "$RegistryPath").$Module
+	if ($Null -eq $ModuleInstalled) {
+		New-ItemProperty -Path $RegistryPath -Name $Module -PropertyType Binary -Value 0 | Out-Null
 	}
 
-	Import-Module -Name $Module
+	if ($ModuleInstalled -eq 1) {
+		continue 
+	}
+
+	try {
+		Install-Module -Name $Module -Scope CurrentUser -Force -ErrorAction Stop
+		Set-ItemProperty -Path $RegistryPath -Name $Module -Value 1 | Out-Null
+	}
+	catch {
+		Write-Error "Unable to install $Module"
+	}
 }
 
 #################################################
