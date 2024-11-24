@@ -40,7 +40,7 @@ if ($ReleaseItInstalled -ne 1) {
 		}
 	}
 	catch {
-		Write-Error "Release-It not installed. First install NPM if you haven't already and then run the below and restart the terminal:`n`tnpm install -g release-it"
+		Write-Error "Release-It and Auto-ChangeLog not installed. First install NPM if you haven't already and then run the the two lines below before restarting the terminal:`n`tnpm install -g release-it`n`tnpm install -g auto-changelog"
 	}
 }
 
