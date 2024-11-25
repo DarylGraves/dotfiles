@@ -9,17 +9,17 @@
             "keys": "ctrl+v"
         },
         {
-            "command": "closePane",
-            "id": "User.closePane",
-            "keys": "alt+shift+w"
-        },
-        {
             "command": 
             {
                 "action": "prevTab"
             },
             "id": "User.prevTab.0",
             "keys": "ctrl+shift+tab"
+        },
+        {
+            "command": "closePane",
+            "id": "User.closePane",
+            "keys": "alt+shift+w"
         },
         {
             "command": 
@@ -155,6 +155,7 @@
             },
             {
                 "colorScheme": "ayu",
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -NoLogo",
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
