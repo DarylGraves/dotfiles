@@ -1,1 +1,1 @@
-{"remapKeys":{"inProcess":[{"originalKeys":"20","newRemapKeys":"27"}]},"remapKeysToText":{"inProcess":[]},"remapShortcuts":{"global":[],"appSpecific":[]},"remapShortcutsToText":{"global":[],"appSpecific":[]}}
+{"remapKeys":{"inProcess":[{"originalKeys":"20","newRemapKeys":"27"}]},"remapKeysToText":{"inProcess":[]},"remapShortcuts":{"global":[{"originalKeys":"164;13","operationType":0,"secondKeyOfChord":0,"newRemapKeys":"91;57"}],"appSpecific":[]},"remapShortcutsToText":{"global":[],"appSpecific":[]}}
