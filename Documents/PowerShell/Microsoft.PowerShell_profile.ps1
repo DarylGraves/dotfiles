@@ -19,30 +19,6 @@ catch {
 }
 
 #################################################
-# Confirm Release It is installed
-#################################################
-$InstalledAppsReg = $BaseRegistryPath + "InstalledApps"
-
-if (!(Test-Path -Path $InstalledAppsReg)) {
-	New-Item -Path $InstalledAppsReg -Force | Out-Null
-}
-
-$ReleaseItInstalled = (Get-ItemProperty -Path $InstalledAppsReg).ReleaseIt 
-
-if ($ReleaseItInstalled -ne 1) {
-	try {
-		$Count = (npm ls -gl | Select-String release-it).count
-
-		if ($Count -gt 0) {
-			Set-ItemProperty -Path $InstalledAppsReg -Name "ReleaseIt" -Value 1 -Force
-		}
-	}
-	catch {
-		Write-Error "Release-It not installed. First install NPM if you haven't already and then run the below and restart the terminal:`n`tnpm install -g release-it"
-	}
-}
-
-#################################################
 # Modules
 #################################################
 $RegistryPath = "HKCU:\Software\PowerShell\Profile\InstalledModules"
