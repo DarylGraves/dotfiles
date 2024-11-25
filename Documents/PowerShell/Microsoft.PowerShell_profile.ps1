@@ -87,3 +87,13 @@ function vi {
 function hosts {
 	notepad "C:\Windows\System32\drivers\etc\hosts"
 }
+
+#################################################
+# Work Specific - Seperate so it doesn't sync 
+#################################################
+$ProfilePath = Split-Path -Path $Profile -Parent
+$WorkProfile = $ProfilePath + "\" + "WorkProfile.ps1"
+
+if (Test-Path -Path $WorkProfile) {
+	. $WorkProfile
+}
