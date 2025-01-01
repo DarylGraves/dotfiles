@@ -192,7 +192,7 @@ for_window [class="^.*"] border pixel 3
 # Requires Depandancies from Endeavour
 ###############################
 # keybinding in fancy rofi (automated):
-bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
+#bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
 
 # Multimedia Keys
 # volume
