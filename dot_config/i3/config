@@ -101,7 +101,7 @@ bindsym $mod4+l exec --no-startup-id ~/.config/i3/scripts/blur-lock
 bindsym $mod+Return exec --no-startup-id alacritty
 
 # DG - Run thunar
-bindsym $mod+e exec --no-startup-id /usr/bin/thunar
+bindsym Mod4+e exec --no-startup-id /usr/bin/thunar
 
 # kill focused window
 bindsym $mod+q kill
