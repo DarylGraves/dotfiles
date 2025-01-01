@@ -378,10 +378,11 @@ bar {
 		output DP-0
 		tray_padding 0
 
-		    colors {
-		    separator          $purple
-		    background         $darkgrey
-		    statusline         $white
+        colors {
+		separator          $purple
+		background         $darkgrey
+		statusline         $white
+
 #                          		border 		        bg		txt		indicator
 		focused_workspace	$mediumgrey	   	$grey		$darkgrey	$purple
 		active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
