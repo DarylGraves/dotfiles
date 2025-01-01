@@ -95,7 +95,7 @@ bindsym $mod+a focus parent
 # open new empty workspace
 bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/scripts/empty_workspace
 # lock by blurring the screen:
-bindsym $mod4+l exec --no-startup-id ~/.config/i3/scripts/blur-lock
+bindsym Mod4+l exec --no-startup-id ~/.config/i3/scripts/blur-lock
 
 # DG - Run a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
