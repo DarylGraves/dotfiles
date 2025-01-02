@@ -28,6 +28,7 @@ set autoindent
 set hlsearch
 set ignorecase 
 set ruler
+set termguicolors
 
 " Remove highlighting
 autocmd CursorMoved * set nohlsearch
