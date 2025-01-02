@@ -72,6 +72,8 @@ function hosts {
 	notepad "C:\Windows\System32\drivers\etc\hosts"
 }
 
+$EDITOR = vim
+
 #################################################
 # Work Specific - Seperate so it doesn't sync 
 #################################################
