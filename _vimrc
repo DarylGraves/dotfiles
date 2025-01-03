@@ -34,4 +34,3 @@ set termguicolors
 autocmd CursorMoved * set nohlsearch
 nnoremap n n:set hlsearch<cr>
 nnoremap N N:set hlsearch<cr>
-"Testing
