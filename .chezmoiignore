@@ -1,10 +1,10 @@
-{{- if ne .chezmoi.os "windows" }}
-AppData
+{{- if eq .chezmoi.os "windows" }}
+dot_config
 dot_glzr
-PowerShell
 {{- end }}
 
-
-{{- if ne .chezmoi.os "linux" }}
-.dot_config
+{{- if eq .chezmoi.os "linux" }}
+AppData
+Documents
+PowerShell
 {{- end }}
