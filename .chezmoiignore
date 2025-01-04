@@ -2,9 +2,9 @@
 AppData
 dot_glzr
 PowerShell
-{{ -end }}
+{{- end }}
 
 
 {{- if ne .chezmoi.os "linux" }}
 .dot_config
-{{ -end }}
+{{- end }}
