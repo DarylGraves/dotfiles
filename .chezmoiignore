@@ -1,10 +1,10 @@
 {{- if eq .chezmoi.os "windows" }}
-dot_config
-dot_glzr
+dot_config/*
+dot_glzr/*
 {{- end }}
 
 {{- if eq .chezmoi.os "linux" }}
-AppData
-Documents
-PowerShell
+AppData/*
+Documents/*
+PowerShell/*
 {{- end }}
