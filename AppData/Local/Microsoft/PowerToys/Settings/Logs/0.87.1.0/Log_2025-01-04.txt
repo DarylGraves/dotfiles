@@ -1,0 +1,16 @@
+[00:39:32.2462928] [Info] KeyboardManagerViewModel::OpenEditor
+    Starting Keyboard Manager editor from C:\Users\dgrav\AppData\Local\PowerToys\KeyboardManagerEditor\PowerToys.KeyboardManagerEditor.exe
+[00:39:46.2749046] [Info] KeyboardManagerViewModel::OpenEditor
+    Previous instance of Keyboard Manager editor exited
+[00:39:46.2751495] [Info] KeyboardManagerViewModel::OpenEditor
+    Starting Keyboard Manager editor from C:\Users\dgrav\AppData\Local\PowerToys\KeyboardManagerEditor\PowerToys.KeyboardManagerEditor.exe
+[00:43:38.9261443] [Info] AwakeViewModel::NotifyPropertyChanged
+    Changed the property IsEnabled
+[01:12:25.1884754] [Info] AwakeViewModel::NotifyPropertyChanged
+    Changed the property IsEnabled
+[01:12:26.2745344] [Info] AwakePage::ViewModel_PropertyChanged
+    Saved general settings from Awake page.
+[01:12:26.2752539] [Info] AwakeViewModel::NotifyPropertyChanged
+    Changed the property IsEnabled
+[01:14:05.2513334] [Info] SettingsUtils::GetSettingsOrDefault
+    Settings file settings.json for EnvironmentVariables was not found.
