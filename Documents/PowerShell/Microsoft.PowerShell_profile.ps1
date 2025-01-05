@@ -7,6 +7,43 @@ if (!(Test-Path -Path $BaseRegistryPath)) {
 Set-PSReadLineOption -PredictionView List
 Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 
+# New install, create registry folder
+if (!(Test-Path -Path $BaseRegistryPath)) {
+	New-Item -Path $BaseRegistryPath -Force
+}
+
+#################################################
+# New Machine - Install Software if personal
+#################################################
+$NewMachine = (Get-ItemProperty -Path $BaseRegistryPath).NewMachine
+
+if ($Null -eq $NewMachine) {
+	New-ItemProperty -Path $BaseRegistryPath -Name "NewMachine" -PropertyType Binary -Value 1 | Out-Null
+	$NewMachine = (Get-ItemProperty -Path $BaseRegistryPath).NewMachine
+}
+
+if ($NewMachine -eq 1) {
+	Write-Host "New Machine!" -ForegroundColor Yellow
+
+	$isValid = $false
+
+	do {
+		$Answer = Read-Host "Personal or Work Computer? (P for Personal, W for Work)"
+		if ($Answer[0] -eq "p" -or $Answer[0] -eq "w") {
+			$isValid = $true
+		}
+	} while ($isValid -eq $false)
+
+	if ($Answer[0] -eq "p") {
+		Write-Host "Personal selected. Installing software via Winget" -ForegroundColor Magenta
+		& winget import "$ENV:USERPROFILE\.config\FirstTimeSetup\1.Winget-NoDependancies.json"
+		Write-Host "Personal selected. Installing second set of software from Winget" -ForegroundColor Magenta
+		& winget import "$ENV:USERPROFILE\.config\FirstTimeSetup\2.Winget-HasDependancies.json"
+	}
+
+	Set-ItemProperty -Path $BaseRegistryPath -Name "NewMachine" -Value 0 | Out-Null
+}
+
 #################################################
 # Posh Prompt
 #################################################
@@ -21,10 +58,9 @@ catch {
 #################################################
 # Modules
 #################################################
-$RegistryPath = "HKCU:\Software\PowerShell\Profile\InstalledModules"
+$RegistryPath = $BaseRegistryPath + "InstalledModules"
 $RequiredModules = @("CompletionPredictor", "Terminal-Icons", "ImportExcel", "PSWriteHTML", "PwshSpectreConsole")
 
-# New install, create registry folder
 if (!(Test-Path -Path $RegistryPath)) {
 	New-Item -Path $RegistryPath -Force
 }
@@ -71,8 +107,6 @@ function vi {
 function hosts {
 	notepad "C:\Windows\System32\drivers\etc\hosts"
 }
-
-$EDITOR = vim
 
 #################################################
 # Work Specific - Seperate so it doesn't sync 
