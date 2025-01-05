@@ -1,16 +1,4 @@
 ﻿; --------------------------------------------------------------
-; Hotkeys
-; --------------------------------------------------------------
-
-; Hotkeys for Moving Focus
-#HotIf !GetKeyState("Shift", "P")  ; Only execute if Shift is NOT pressed
-Alt & h:: MoveFocus("left")
-Alt & j:: MoveFocus("down")
-Alt & k:: MoveFocus("up")
-Alt & l:: MoveFocus("right")
-#HotIf
-
-; --------------------------------------------------------------
 ; Functions
 ; --------------------------------------------------------------
 
@@ -69,3 +57,15 @@ WindowFromPoint(X, Y) {
         , DllCall("User32\WindowFromPoint", "Int64", X | (Y << 32), "Ptr")
         , "UInt", 2)  ; GA_ROOT = 2
 }
+
+; --------------------------------------------------------------
+; Hotkeys
+; --------------------------------------------------------------
+
+; Hotkeys for Moving Focus
+#HotIf !GetKeyState("Shift", "P")  ; Only execute if Shift is NOT pressed
+Alt & h:: MoveFocus("left")
+Alt & j:: MoveFocus("down")
+Alt & k:: MoveFocus("up")
+Alt & l:: MoveFocus("right")
+#HotIf
