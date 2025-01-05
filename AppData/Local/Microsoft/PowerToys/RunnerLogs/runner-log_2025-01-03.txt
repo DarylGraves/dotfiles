@@ -1,0 +1,167 @@
+[2025-01-03 21:08:19.806774] [p-8252] [t-14004] [info] runner logger is initialized
+[2025-01-03 21:08:19.806881] [p-8252] [t-14004] [info] Running powertoys with cmd args: --dont-elevate
+[2025-01-03 21:08:19.807141] [p-8252] [t-14004] [info] Scoobe: product_version=v0.87.1 last_version_run=
+[2025-01-03 21:08:19.807355] [p-8252] [t-14004] [info] apply_general_settings: {}
+[2025-01-03 21:08:19.841602] [p-8252] [t-14004] [info] Runner is starting. Elevated=false openOobe=true openScoobe=true showRestartNotificationAfterUpdate=true
+[2025-01-03 21:08:19.919210] [p-8252] [t-14004] [trace] UnRegister hotkey action for FancyZones
+[2025-01-03 21:08:19.965726] [p-8252] [t-14004] [trace] UnRegister hotkey action for File Explorer
+[2025-01-03 21:08:20.011120] [p-8252] [t-14004] [trace] UnRegister hotkey action for Image Resizer
+[2025-01-03 21:08:20.051658] [p-8252] [t-14004] [trace] UnRegister hotkey action for Keyboard Manager
+[2025-01-03 21:08:20.096458] [p-8252] [t-14004] [trace] UnRegister hotkey action for PowerToys Run
+[2025-01-03 21:08:20.096491] [p-8252] [t-14004] [trace] Register hotkey action for PowerToys Run
+[2025-01-03 21:08:20.146099] [p-8252] [t-14004] [trace] UnRegister hotkey action for PowerRename
+[2025-01-03 21:08:20.182832] [p-8252] [t-14004] [trace] UnRegister hotkey action for Shortcut Guide
+[2025-01-03 21:08:20.266669] [p-8252] [t-14004] [trace] UnRegister hotkey action for ColorPicker
+[2025-01-03 21:08:20.266708] [p-8252] [t-14004] [trace] Register hotkey action for ColorPicker
+[2025-01-03 21:08:20.311984] [p-8252] [t-14004] [trace] UnRegister hotkey action for Awake
+[2025-01-03 21:08:20.353456] [p-8252] [t-14004] [trace] UnRegister hotkey action for FindMyMouse
+[2025-01-03 21:08:20.391576] [p-8252] [t-14004] [trace] UnRegister hotkey action for MouseHighlighter
+[2025-01-03 21:08:20.429350] [p-8252] [t-14004] [trace] UnRegister hotkey action for MouseJump
+[2025-01-03 21:08:20.429368] [p-8252] [t-14004] [trace] Register hotkey action for MouseJump
+[2025-01-03 21:08:20.467875] [p-8252] [t-14004] [trace] UnRegister hotkey action for AlwaysOnTop
+[2025-01-03 21:08:20.467911] [p-8252] [t-14004] [trace] Register hotkey action for AlwaysOnTop
+[2025-01-03 21:08:20.507029] [p-8252] [t-14004] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2025-01-03 21:08:20.543830] [p-8252] [t-14004] [trace] UnRegister hotkey action for QuickAccent
+[2025-01-03 21:08:20.582438] [p-8252] [t-14004] [trace] UnRegister hotkey action for TextExtractor
+[2025-01-03 21:08:20.582458] [p-8252] [t-14004] [trace] Register hotkey action for TextExtractor
+[2025-01-03 21:08:20.623907] [p-8252] [t-14004] [trace] UnRegister hotkey action for AdvancedPaste
+[2025-01-03 21:08:20.623935] [p-8252] [t-14004] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 21:08:20.623943] [p-8252] [t-14004] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 21:08:20.623950] [p-8252] [t-14004] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 21:08:20.623955] [p-8252] [t-14004] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 21:08:20.660530] [p-8252] [t-14004] [trace] UnRegister hotkey action for File Locksmith
+[2025-01-03 21:08:20.699261] [p-8252] [t-14004] [trace] UnRegister hotkey action for RegistryPreview
+[2025-01-03 21:08:20.735370] [p-8252] [t-14004] [trace] UnRegister hotkey action for Measure Tool
+[2025-01-03 21:08:20.735400] [p-8252] [t-14004] [trace] Register hotkey action for Measure Tool
+[2025-01-03 21:08:20.776122] [p-8252] [t-14004] [trace] UnRegister hotkey action for NewPlus
+[2025-01-03 21:08:20.816005] [p-8252] [t-14004] [trace] UnRegister hotkey action for Hosts
+[2025-01-03 21:08:20.857045] [p-8252] [t-14004] [trace] UnRegister hotkey action for Peek
+[2025-01-03 21:08:20.857071] [p-8252] [t-14004] [trace] Register hotkey action for Peek
+[2025-01-03 21:08:20.896091] [p-8252] [t-14004] [trace] UnRegister hotkey action for EnvironmentVariables
+[2025-01-03 21:08:20.939274] [p-8252] [t-14004] [trace] UnRegister hotkey action for MouseWithoutBorders
+[2025-01-03 21:08:20.972303] [p-8252] [t-14004] [trace] UnRegister hotkey action for CropAndLock
+[2025-01-03 21:08:20.972353] [p-8252] [t-14004] [trace] Register hotkey action for CropAndLock
+[2025-01-03 21:08:20.972361] [p-8252] [t-14004] [trace] Register hotkey action for CropAndLock
+[2025-01-03 21:08:21.010083] [p-8252] [t-14004] [trace] UnRegister hotkey action for CmdNotFound
+[2025-01-03 21:08:21.043583] [p-8252] [t-14004] [trace] UnRegister hotkey action for Workspaces
+[2025-01-03 21:08:21.168935] [p-8252] [t-14004] [trace] UnRegister hotkey action for Video Conference
+[2025-01-03 21:08:21.169566] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy AdvancedPaste
+[2025-01-03 21:08:27.499653] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2025-01-03 21:08:27.560202] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2025-01-03 21:08:27.600554] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy CmdNotFound
+[2025-01-03 21:08:27.600584] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2025-01-03 21:08:27.654062] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy CropAndLock
+[2025-01-03 21:08:27.714935] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy EnvironmentVariables
+[2025-01-03 21:08:27.715052] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2025-01-03 21:08:27.796723] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2025-01-03 21:08:27.796808] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2025-01-03 21:08:28.521782] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2025-01-03 21:08:28.521971] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2025-01-03 21:08:28.522066] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2025-01-03 21:08:29.543452] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2025-01-03 21:08:29.543517] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2025-01-03 21:08:29.543659] [p-8252] [t-14004] [trace] shift+win+H shortcut registered
+[2025-01-03 21:08:29.543681] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy Peek
+[2025-01-03 21:08:29.665472] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2025-01-03 21:08:30.331405] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2025-01-03 21:08:30.405290] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy RegistryPreview
+[2025-01-03 21:08:30.405858] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2025-01-03 21:08:30.405983] [p-8252] [t-14004] [trace] shift+win+/ shortcut registered
+[2025-01-03 21:08:30.406002] [p-8252] [t-14004] [info] start_enabled_powertoys: Enabling powertoy Workspaces
+[2025-01-03 21:08:30.406139] [p-8252] [t-14004] [trace] ctrl+win+' shortcut registered
+[2025-01-03 21:48:57.514829] [p-8252] [t-14004] [trace] Peek hotkey is invoked from Centralized keyboard hook
+[2025-01-03 21:48:59.178886] [p-8252] [t-14004] [trace] Peek hotkey is invoked from Centralized keyboard hook
+[2025-01-03 22:54:34.681181] [p-9360] [t-9396] [info] runner logger is initialized
+[2025-01-03 22:54:34.681693] [p-9360] [t-9396] [info] Running powertoys with cmd args: 
+[2025-01-03 22:54:34.716136] [p-9360] [t-9396] [info] Scoobe: product_version=v0.87.1 last_version_run=v0.87.1
+[2025-01-03 22:54:34.717103] [p-9360] [t-9396] [info] apply_general_settings: {"startup":true,"enabled":{"AdvancedPaste":true,"AlwaysOnTop":true,"Awake":true,"CmdNotFound":false,"ColorPicker":true,"CropAndLock":true,"EnvironmentVariables":true,"FancyZones":true,"File Explorer":true,"File Locksmith":true,"FindMyMouse":true,"Hosts":true,"Image Resizer":true,"Keyboard Manager":false,"Measure Tool":true,"MouseHighlighter":true,"MouseJump":false,"MousePointerCrosshairs":false,"MouseWithoutBorders":false,"NewPlus":false,"Peek":true,"PowerRename":true,"PowerToys Run":true,"QuickAccent":false,"RegistryPreview":true,"Shortcut Guide":true,"TextExtractor":false,"Video Conference":false,"Workspaces":true},"is_elevated":false,"run_elevated":false,"show_new_updates_toast_notification":true,"download_updates_automatically":true,"show_whats_new_after_updates":true,"enable_experimentation":true,"is_admin":true,"enable_warnings_elevated_apps":true,"theme":"system","system_theme":"dark","powertoys_version":"v0.87.1"}
+[2025-01-03 22:54:34.752799] [p-9360] [t-9396] [info] Runner is starting. Elevated=false openOobe=false openScoobe=false showRestartNotificationAfterUpdate=false
+[2025-01-03 22:54:34.932389] [p-9360] [t-9396] [trace] UnRegister hotkey action for FancyZones
+[2025-01-03 22:54:35.105369] [p-9360] [t-9396] [trace] UnRegister hotkey action for File Explorer
+[2025-01-03 22:54:35.142113] [p-9360] [t-9396] [trace] UnRegister hotkey action for Image Resizer
+[2025-01-03 22:54:35.199258] [p-9360] [t-9396] [trace] UnRegister hotkey action for Keyboard Manager
+[2025-01-03 22:54:35.233493] [p-9360] [t-9396] [trace] UnRegister hotkey action for PowerToys Run
+[2025-01-03 22:54:35.233645] [p-9360] [t-9396] [trace] Register hotkey action for PowerToys Run
+[2025-01-03 22:54:35.308904] [p-9360] [t-9396] [trace] UnRegister hotkey action for PowerRename
+[2025-01-03 22:54:35.737646] [p-9360] [t-9396] [trace] UnRegister hotkey action for Shortcut Guide
+[2025-01-03 22:54:35.759833] [p-9360] [t-9396] [trace] UnRegister hotkey action for ColorPicker
+[2025-01-03 22:54:35.759932] [p-9360] [t-9396] [trace] Register hotkey action for ColorPicker
+[2025-01-03 22:54:35.769331] [p-9360] [t-9396] [trace] UnRegister hotkey action for Awake
+[2025-01-03 22:54:35.847897] [p-9360] [t-9396] [trace] UnRegister hotkey action for FindMyMouse
+[2025-01-03 22:54:35.928103] [p-9360] [t-9396] [trace] UnRegister hotkey action for MouseHighlighter
+[2025-01-03 22:54:35.938018] [p-9360] [t-9396] [trace] UnRegister hotkey action for MouseJump
+[2025-01-03 22:54:35.938156] [p-9360] [t-9396] [trace] Register hotkey action for MouseJump
+[2025-01-03 22:54:36.038783] [p-9360] [t-9396] [trace] UnRegister hotkey action for AlwaysOnTop
+[2025-01-03 22:54:36.052305] [p-9360] [t-9396] [trace] Register hotkey action for AlwaysOnTop
+[2025-01-03 22:54:36.134186] [p-9360] [t-9396] [trace] UnRegister hotkey action for MousePointerCrosshairs
+[2025-01-03 22:54:36.229604] [p-9360] [t-9396] [trace] UnRegister hotkey action for QuickAccent
+[2025-01-03 22:54:36.283417] [p-9360] [t-9396] [trace] UnRegister hotkey action for TextExtractor
+[2025-01-03 22:54:36.290201] [p-9360] [t-9396] [trace] Register hotkey action for TextExtractor
+[2025-01-03 22:54:36.322476] [p-9360] [t-9396] [trace] UnRegister hotkey action for AdvancedPaste
+[2025-01-03 22:54:36.322686] [p-9360] [t-9396] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 22:54:36.322941] [p-9360] [t-9396] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 22:54:36.323307] [p-9360] [t-9396] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 22:54:36.323571] [p-9360] [t-9396] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 22:54:36.323895] [p-9360] [t-9396] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 22:54:36.324247] [p-9360] [t-9396] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 22:54:36.324497] [p-9360] [t-9396] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 22:54:36.324738] [p-9360] [t-9396] [trace] Register hotkey action for AdvancedPaste
+[2025-01-03 22:54:36.451910] [p-9360] [t-9396] [trace] UnRegister hotkey action for File Locksmith
+[2025-01-03 22:54:36.561368] [p-9360] [t-9396] [trace] UnRegister hotkey action for RegistryPreview
+[2025-01-03 22:54:36.643500] [p-9360] [t-9396] [trace] UnRegister hotkey action for Measure Tool
+[2025-01-03 22:54:36.643690] [p-9360] [t-9396] [trace] Register hotkey action for Measure Tool
+[2025-01-03 22:54:36.752216] [p-9360] [t-9396] [trace] UnRegister hotkey action for NewPlus
+[2025-01-03 22:54:36.829945] [p-9360] [t-9396] [trace] UnRegister hotkey action for Hosts
+[2025-01-03 22:54:36.860804] [p-9360] [t-9396] [trace] UnRegister hotkey action for Peek
+[2025-01-03 22:54:36.860939] [p-9360] [t-9396] [trace] Register hotkey action for Peek
+[2025-01-03 22:54:36.956440] [p-9360] [t-9396] [trace] UnRegister hotkey action for EnvironmentVariables
+[2025-01-03 22:54:37.021059] [p-9360] [t-9396] [trace] UnRegister hotkey action for MouseWithoutBorders
+[2025-01-03 22:54:37.100232] [p-9360] [t-9396] [trace] UnRegister hotkey action for CropAndLock
+[2025-01-03 22:54:37.100330] [p-9360] [t-9396] [trace] Register hotkey action for CropAndLock
+[2025-01-03 22:54:37.100394] [p-9360] [t-9396] [trace] Register hotkey action for CropAndLock
+[2025-01-03 22:54:37.165954] [p-9360] [t-9396] [trace] UnRegister hotkey action for CmdNotFound
+[2025-01-03 22:54:37.210689] [p-9360] [t-9396] [trace] UnRegister hotkey action for Workspaces
+[2025-01-03 22:54:37.234579] [p-9360] [t-9396] [trace] UnRegister hotkey action for Video Conference
+[2025-01-03 22:54:37.235256] [p-9360] [t-9396] [info] start_enabled_powertoys: Powertoy QuickAccent explicitly disabled
+[2025-01-03 22:54:37.235341] [p-9360] [t-9396] [info] start_enabled_powertoys: Powertoy Video Conference explicitly disabled
+[2025-01-03 22:54:37.235420] [p-9360] [t-9396] [info] start_enabled_powertoys: Powertoy MousePointerCrosshairs explicitly disabled
+[2025-01-03 22:54:37.235486] [p-9360] [t-9396] [info] start_enabled_powertoys: Powertoy NewPlus explicitly disabled
+[2025-01-03 22:54:37.235560] [p-9360] [t-9396] [info] start_enabled_powertoys: Powertoy Keyboard Manager explicitly disabled
+[2025-01-03 22:54:37.235622] [p-9360] [t-9396] [info] start_enabled_powertoys: Powertoy TextExtractor explicitly disabled
+[2025-01-03 22:54:37.235690] [p-9360] [t-9396] [info] start_enabled_powertoys: Powertoy MouseWithoutBorders explicitly disabled
+[2025-01-03 22:54:37.235741] [p-9360] [t-9396] [info] start_enabled_powertoys: Powertoy CmdNotFound explicitly disabled
+[2025-01-03 22:54:37.235808] [p-9360] [t-9396] [info] start_enabled_powertoys: Powertoy MouseJump explicitly disabled
+[2025-01-03 22:54:37.235929] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy AdvancedPaste
+[2025-01-03 22:54:39.204248] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy AlwaysOnTop
+[2025-01-03 22:54:39.262590] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy Awake
+[2025-01-03 22:54:39.267393] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy ColorPicker
+[2025-01-03 22:54:39.320013] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy CropAndLock
+[2025-01-03 22:54:39.436196] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy EnvironmentVariables
+[2025-01-03 22:54:39.446436] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy FancyZones
+[2025-01-03 22:54:39.574678] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy File Explorer
+[2025-01-03 22:54:39.586754] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy File Locksmith
+[2025-01-03 22:54:39.600263] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy FindMyMouse
+[2025-01-03 22:54:39.620224] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy Hosts
+[2025-01-03 22:54:39.620564] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy Image Resizer
+[2025-01-03 22:54:39.633071] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy Measure Tool
+[2025-01-03 22:54:39.633242] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy MouseHighlighter
+[2025-01-03 22:54:39.633589] [p-9360] [t-9396] [trace] shift+win+H shortcut registered
+[2025-01-03 22:54:39.633874] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy Peek
+[2025-01-03 22:54:39.991115] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy PowerRename
+[2025-01-03 22:54:40.006482] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy PowerToys Run
+[2025-01-03 22:54:40.141551] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy RegistryPreview
+[2025-01-03 22:54:40.142170] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy Shortcut Guide
+[2025-01-03 22:54:40.142474] [p-9360] [t-9396] [trace] shift+win+/ shortcut registered
+[2025-01-03 22:54:40.142563] [p-9360] [t-9396] [info] start_enabled_powertoys: Enabling powertoy Workspaces
+[2025-01-03 22:54:40.143176] [p-9360] [t-9396] [trace] ctrl+win+' shortcut registered
+[2025-01-03 23:03:49.607951] [p-9360] [t-9396] [trace] Peek hotkey is invoked from Centralized keyboard hook
+[2025-01-03 23:07:49.060648] [p-9360] [t-9396] [trace] Peek hotkey is invoked from Centralized keyboard hook
+[2025-01-03 23:07:54.732598] [p-9360] [t-9396] [trace] Peek hotkey is invoked from Centralized keyboard hook
+[2025-01-03 23:18:38.941966] [p-9360] [t-9396] [info] apply_general_settings: {"startup":true,"is_elevated":false,"run_elevated":false,"is_admin":true,"enable_warnings_elevated_apps":true,"theme":"system","system_theme":"dark","powertoys_version":"v0.87.1","action_name":"","enabled":{"FancyZones":true,"Image Resizer":true,"File Explorer Preview":true,"Shortcut Guide":true,"Video Conference":false,"PowerRename":true,"Keyboard Manager":true,"PowerToys Run":true,"ColorPicker":true,"CropAndLock":true,"Awake":true,"MouseWithoutBorders":false,"FindMyMouse":true,"MouseHighlighter":true,"MouseJump":false,"AlwaysOnTop":true,"MousePointerCrosshairs":false,"QuickAccent":false,"TextExtractor":false,"AdvancedPaste":true,"Measure Tool":true,"Hosts":true,"File Locksmith":true,"Peek":true,"RegistryPreview":true,"CmdNotFound":false,"EnvironmentVariables":true,"NewPlus":false,"Workspaces":true},"show_new_updates_toast_notification":true,"download_updates_automatically":true,"show_whats_new_after_updates":true,"enable_experimentation":true}
+[2025-01-03 23:18:38.967319] [p-9360] [t-9396] [info] apply_general_settings: Enabling powertoy Keyboard Manager
+[2025-01-03 23:18:39.059155] [p-9360] [t-9396] [error] get_power_toys_settings(): got malformed json for CmdNotFound module
+[2025-01-03 23:18:39.059333] [p-9360] [t-9396] [error] get_power_toys_settings(): got malformed json for EnvironmentVariables module
+[2025-01-03 23:18:39.059356] [p-9360] [t-9396] [error] get_power_toys_settings(): got malformed json for FancyZones module
+[2025-01-03 23:18:39.069823] [p-9360] [t-9396] [error] get_power_toys_settings(): got malformed json for Hosts module
+[2025-01-03 23:18:39.070236] [p-9360] [t-9396] [error] get_power_toys_settings(): got malformed json for NewPlus module
+[2025-01-03 23:18:39.070870] [p-9360] [t-9396] [error] get_power_toys_settings(): got malformed json for Video Conference module

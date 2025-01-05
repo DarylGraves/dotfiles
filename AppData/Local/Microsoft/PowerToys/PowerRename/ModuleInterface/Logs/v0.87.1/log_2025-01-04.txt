@@ -1,0 +1,3 @@
+[2025-01-04 01:17:52.374533] [p-9360] [t-9396] [info] PowerRename disabled
+[2025-01-04 15:50:47.237360] [p-15600] [t-15588] [info] powerrename logger is initialized
+[2025-01-04 20:18:46.860608] [p-20276] [t-18400] [info] powerrename logger is initialized

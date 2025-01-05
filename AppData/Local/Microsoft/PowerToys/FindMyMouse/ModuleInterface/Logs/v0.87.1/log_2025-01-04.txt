@@ -1,0 +1,15 @@
+[2025-01-04 00:12:50.215769] [p-9360] [t-8144] [info] Detecting double left control click with 578 ms interval.
+[2025-01-04 00:18:24.227455] [p-9360] [t-8144] [info] Focusing the sonar on the mouse cursor.
+[2025-01-04 00:18:24.229238] [p-9360] [t-8144] [info] Detecting double left control click with 250 ms interval.
+[2025-01-04 00:18:34.203014] [p-9360] [t-8144] [info] Detecting double left control click with 891 ms interval.
+[2025-01-04 00:43:49.526676] [p-9360] [t-8144] [info] Focusing the sonar on the mouse cursor.
+[2025-01-04 00:43:49.527949] [p-9360] [t-8144] [info] Detecting double left control click with 344 ms interval.
+[2025-01-04 01:11:21.296008] [p-9360] [t-8144] [info] Focusing the sonar on the mouse cursor.
+[2025-01-04 01:11:21.297347] [p-9360] [t-8144] [info] Detecting double left control click with 125 ms interval.
+[2025-01-04 01:12:54.622966] [p-9360] [t-9396] [info] Terminating a sonar instance.
+[2025-01-04 01:12:54.623024] [p-9360] [t-9396] [trace] GetHotkeyEx()
+[2025-01-04 01:12:54.625953] [p-9360] [t-8144] [info] Sonar message loop ended.
+[2025-01-04 15:50:47.662848] [p-15600] [t-15588] [info] find-my-mouse logger is initialized
+[2025-01-04 15:50:47.665275] [p-15600] [t-15588] [trace] GetHotkeyEx()
+[2025-01-04 20:18:46.887306] [p-20276] [t-18400] [info] find-my-mouse logger is initialized
+[2025-01-04 20:18:46.888740] [p-20276] [t-18400] [trace] GetHotkeyEx()

@@ -1,0 +1,10 @@
+[2025-01-04 01:14:26.972729] [p-9360] [t-9396] [trace] AdvancedPaste hotkey pressed
+[2025-01-04 01:14:26.973295] [p-9360] [t-9396] [trace] Setting start up event
+[2025-01-04 15:50:48.274291] [p-15600] [t-15588] [info] AdvancedPaste logger is initialized
+[2025-01-04 15:50:48.921900] [p-15600] [t-15588] [trace] AdvancedPaste::enable()
+[2025-01-04 15:50:48.922069] [p-15600] [t-15588] [trace] Starting AdvancedPaste process
+[2025-01-04 15:50:49.028016] [p-15600] [t-15588] [trace] Successfully started the Advanced Paste process
+[2025-01-04 20:18:46.931312] [p-20276] [t-18400] [info] AdvancedPaste logger is initialized
+[2025-01-04 20:18:47.072335] [p-20276] [t-18400] [trace] AdvancedPaste::enable()
+[2025-01-04 20:18:47.072508] [p-20276] [t-18400] [trace] Starting AdvancedPaste process
+[2025-01-04 20:18:47.147821] [p-20276] [t-18400] [trace] Successfully started the Advanced Paste process

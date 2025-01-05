@@ -1,0 +1,5 @@
+[2025-01-03 21:08:20.659872] [p-8252] [t-14004] [info] FileLocksmith logger is initialized
+[2025-01-03 21:08:27.796820] [p-8252] [t-14004] [info] File Locksmith enabled
+[2025-01-03 21:08:28.521662] [p-8252] [t-14004] [info] Register C:\Users\dgrav\AppData\Local\PowerToys\WinUI3Apps\FileLocksmithContextMenuPackage.msix package completed.
+[2025-01-03 22:54:36.451037] [p-9360] [t-9396] [info] FileLocksmith logger is initialized
+[2025-01-03 22:54:39.587267] [p-9360] [t-9396] [info] File Locksmith enabled

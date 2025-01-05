@@ -1,0 +1,4 @@
+[2025-01-03 21:08:20.581814] [p-8252] [t-14004] [info] TextExtractor logger is initialized
+[2025-01-03 21:08:20.582397] [p-8252] [t-14004] [info] TextExtractor settings are empty
+[2025-01-03 21:08:20.582420] [p-8252] [t-14004] [info] TextExtractor is going to use default shortcut
+[2025-01-03 22:54:36.282930] [p-9360] [t-9396] [info] TextExtractor logger is initialized

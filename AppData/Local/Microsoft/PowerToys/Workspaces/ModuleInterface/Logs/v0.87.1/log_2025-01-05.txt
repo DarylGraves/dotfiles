@@ -1,0 +1,9 @@
+[2025-01-05 00:32:37.298158] [p-20276] [t-24440] [info] enabled = false
+[2025-01-05 00:54:46.823231] [p-20276] [t-10968] [info] enabled = false
+[2025-01-05 11:25:35.532373] [p-13992] [t-13860] [info] Workspaces logger is initialized
+[2025-01-05 11:25:35.532621] [p-13992] [t-13860] [trace] Read settings Workspaces
+[2025-01-05 11:25:35.533130] [p-13992] [t-13860] [info] enabled = false
+[2025-01-05 16:34:58.718960] [p-13992] [t-20276] [info] enabled = false
+[2025-01-05 16:35:28.577858] [p-13992] [t-13860] [info] enabled = false
+[2025-01-05 16:36:41.979695] [p-13992] [t-13860] [info] enabled = false
+[2025-01-05 16:36:50.815214] [p-13992] [t-13860] [info] enabled = false

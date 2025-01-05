@@ -1,0 +1,2 @@
+[2025-01-04 15:50:50.644844] [p-10536] [t-10592] [info] always-on-top logger is initialized
+[2025-01-04 20:18:47.908365] [p-14436] [t-13380] [info] always-on-top logger is initialized

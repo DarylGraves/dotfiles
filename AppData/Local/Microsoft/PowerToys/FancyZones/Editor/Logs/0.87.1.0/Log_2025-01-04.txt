@@ -1,0 +1,507 @@
+[16:45:19.1267666] [Trace] FancyZonesEditorIO::ParseParams
+[16:45:19.1928468] [Trace] FancyZonesEditorIO::ParseLayoutTemplates
+[16:45:19.2100281] [Trace] FancyZonesEditorIO::SetTemplateLayouts
+[16:45:19.2136959] [Trace] FancyZonesEditorIO::ParseCustomLayouts
+[16:45:19.2332992] [Trace] FancyZonesEditorIO::SetCustomLayouts
+[16:45:19.2422752] [Trace] FancyZonesEditorIO::ParseDefaultLayouts
+[16:45:19.2643107] [Trace] FancyZonesEditorIO::SetDefaultLayouts
+[16:45:19.2661319] [Trace] FancyZonesEditorIO::ParseLayoutHotkeys
+[16:45:19.2798207] [Trace] FancyZonesEditorIO::SetLayoutHotkeys
+[16:45:19.2880257] [Trace] FancyZonesEditorIO::ParseAppliedLayouts
+[16:45:19.3156067] [Trace] FancyZonesEditorIO::SetAppliedLayouts
+[16:45:19.3179146] [Trace] Overlay::Show
+[16:45:19.3865487] [Trace] Overlay::ShowLayout
+[16:45:19.6191680] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[16:45:19.9679396] [Info] LayoutPreview::OnLoaded
+    Loaded No layout
+[16:45:19.9687012] [Info] LayoutPreview::OnLoaded
+    Loaded Focus
+[16:45:19.9691787] [Info] LayoutPreview::OnLoaded
+    Loaded Columns
+[16:45:19.9697743] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[16:45:19.9702828] [Info] LayoutPreview::OnLoaded
+    Loaded Grid
+[16:45:19.9707809] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[16:45:19.9712760] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side
+[16:45:19.9716735] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[16:45:21.7854390] [Trace] MainWindow::EditLayout_Click
+[16:45:21.8397751] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[16:45:21.8406149] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[16:45:23.7825906] [Trace] MainWindow::EditLayoutDialog_PrimaryButtonClick
+[16:45:23.7835321] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[16:45:25.2283481] [Trace] MainWindow::OnClosing
+[16:45:25.2286746] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[16:45:25.3202596] [Info] App::Dispose
+    FancyZones Editor disposed
+[16:45:25.3205782] [Info] App::OnExit
+    FancyZones Editor exited
+[18:36:02.3145462] [Trace] FancyZonesEditorIO::ParseParams
+[18:36:02.3771641] [Trace] FancyZonesEditorIO::ParseLayoutTemplates
+[18:36:02.3942679] [Trace] FancyZonesEditorIO::SetTemplateLayouts
+[18:36:02.3975801] [Trace] FancyZonesEditorIO::ParseCustomLayouts
+[18:36:02.4149497] [Trace] FancyZonesEditorIO::SetCustomLayouts
+[18:36:02.4219461] [Trace] FancyZonesEditorIO::ParseDefaultLayouts
+[18:36:02.4434172] [Trace] FancyZonesEditorIO::SetDefaultLayouts
+[18:36:02.4451775] [Trace] FancyZonesEditorIO::ParseLayoutHotkeys
+[18:36:02.4584098] [Trace] FancyZonesEditorIO::SetLayoutHotkeys
+[18:36:02.4612594] [Trace] FancyZonesEditorIO::ParseAppliedLayouts
+[18:36:02.4805096] [Trace] FancyZonesEditorIO::SetAppliedLayouts
+[18:36:02.4824152] [Trace] Overlay::Show
+[18:36:02.5464632] [Trace] Overlay::ShowLayout
+[18:36:02.7848905] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[18:36:03.1051139] [Info] LayoutPreview::OnLoaded
+    Loaded No layout
+[18:36:03.1056967] [Info] LayoutPreview::OnLoaded
+    Loaded Focus
+[18:36:03.1061624] [Info] LayoutPreview::OnLoaded
+    Loaded Columns
+[18:36:03.1067316] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[18:36:03.1072419] [Info] LayoutPreview::OnLoaded
+    Loaded Grid
+[18:36:03.1077493] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[18:36:03.1082452] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side
+[18:36:03.1086354] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[18:36:04.7866811] [Trace] MainWindow::EditLayout_Click
+[18:36:04.8362793] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[18:36:04.8370647] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[18:36:08.9195617] [Trace] MainWindow::EditLayoutDialog_PrimaryButtonClick
+[18:36:08.9205041] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[18:36:10.0915991] [Trace] MainWindow::OnClosing
+[18:36:10.0918398] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[18:36:10.2054775] [Info] App::Dispose
+    FancyZones Editor disposed
+[18:36:10.2057799] [Info] App::OnExit
+    FancyZones Editor exited
+[19:11:25.1628946] [Trace] FancyZonesEditorIO::ParseParams
+[19:11:25.2242771] [Trace] Overlay::ShowLayout
+[19:11:25.5165423] [Trace] FancyZonesEditorIO::ParseLayoutTemplates
+[19:11:25.5284842] [Trace] FancyZonesEditorIO::SetTemplateLayouts
+[19:11:25.5317228] [Trace] FancyZonesEditorIO::ParseCustomLayouts
+[19:11:25.5430893] [Trace] FancyZonesEditorIO::SetCustomLayouts
+[19:11:25.5500695] [Trace] FancyZonesEditorIO::ParseDefaultLayouts
+[19:11:25.5643609] [Trace] FancyZonesEditorIO::SetDefaultLayouts
+[19:11:25.5659570] [Trace] FancyZonesEditorIO::ParseLayoutHotkeys
+[19:11:25.5732868] [Trace] FancyZonesEditorIO::SetLayoutHotkeys
+[19:11:25.5762467] [Trace] FancyZonesEditorIO::ParseAppliedLayouts
+[19:11:25.5951124] [Trace] FancyZonesEditorIO::SetAppliedLayouts
+[19:11:25.5960608] [Trace] Overlay::Show
+[19:11:25.5992133] [Trace] Overlay::ShowLayout
+[19:11:25.8273865] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[19:11:25.8675597] [Info] LayoutPreview::OnLoaded
+    Loaded No layout
+[19:11:25.8680248] [Info] LayoutPreview::OnLoaded
+    Loaded Focus
+[19:11:25.8684864] [Info] LayoutPreview::OnLoaded
+    Loaded Columns
+[19:11:25.8691079] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[19:11:25.8695544] [Info] LayoutPreview::OnLoaded
+    Loaded Grid
+[19:11:25.8700915] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[19:11:25.8706030] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side
+[19:11:25.8710226] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[19:11:26.3836155] [Trace] MainWindow::OnClosing
+[19:11:26.3902955] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[19:11:26.4844502] [Info] App::Dispose
+    FancyZones Editor disposed
+[19:11:26.4846609] [Info] App::OnExit
+    FancyZones Editor exited
+[19:51:58.5043176] [Trace] FancyZonesEditorIO::ParseParams
+[19:51:58.5647049] [Trace] FancyZonesEditorIO::ParseLayoutTemplates
+[19:51:58.5748755] [Trace] FancyZonesEditorIO::SetTemplateLayouts
+[19:51:58.5781055] [Trace] FancyZonesEditorIO::ParseCustomLayouts
+[19:51:58.5888837] [Trace] FancyZonesEditorIO::SetCustomLayouts
+[19:51:58.5959580] [Trace] FancyZonesEditorIO::ParseDefaultLayouts
+[19:51:58.6100998] [Trace] FancyZonesEditorIO::SetDefaultLayouts
+[19:51:58.6119267] [Trace] FancyZonesEditorIO::ParseLayoutHotkeys
+[19:51:58.6193835] [Trace] FancyZonesEditorIO::SetLayoutHotkeys
+[19:51:58.6222687] [Trace] FancyZonesEditorIO::ParseAppliedLayouts
+[19:51:58.6415208] [Trace] FancyZonesEditorIO::SetAppliedLayouts
+[19:51:58.6434354] [Trace] Overlay::Show
+[19:51:58.7096043] [Trace] Overlay::ShowLayout
+[19:51:58.8931962] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[19:51:59.2046708] [Info] LayoutPreview::OnLoaded
+    Loaded No layout
+[19:51:59.2051770] [Info] LayoutPreview::OnLoaded
+    Loaded Focus
+[19:51:59.2056312] [Info] LayoutPreview::OnLoaded
+    Loaded Columns
+[19:51:59.2062006] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[19:51:59.2066015] [Info] LayoutPreview::OnLoaded
+    Loaded Grid
+[19:51:59.2071086] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[19:51:59.2076076] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side
+[19:51:59.2080012] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[19:52:00.9423183] [Trace] MainWindow::OnClosing
+[19:52:00.9430198] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[19:52:01.0307765] [Info] App::Dispose
+    FancyZones Editor disposed
+[19:52:01.0310107] [Info] App::OnExit
+    FancyZones Editor exited
+[19:52:03.4357500] [Trace] FancyZonesEditorIO::ParseParams
+[19:52:03.5019924] [Trace] Overlay::ShowLayout
+[19:52:03.7997755] [Trace] FancyZonesEditorIO::ParseLayoutTemplates
+[19:52:03.8109259] [Trace] FancyZonesEditorIO::SetTemplateLayouts
+[19:52:03.8140133] [Trace] FancyZonesEditorIO::ParseCustomLayouts
+[19:52:03.8246538] [Trace] FancyZonesEditorIO::SetCustomLayouts
+[19:52:03.8314757] [Trace] FancyZonesEditorIO::ParseDefaultLayouts
+[19:52:03.8459277] [Trace] FancyZonesEditorIO::SetDefaultLayouts
+[19:52:03.8474369] [Trace] FancyZonesEditorIO::ParseLayoutHotkeys
+[19:52:03.8544020] [Trace] FancyZonesEditorIO::SetLayoutHotkeys
+[19:52:03.8571887] [Trace] FancyZonesEditorIO::ParseAppliedLayouts
+[19:52:03.8764380] [Trace] FancyZonesEditorIO::SetAppliedLayouts
+[19:52:03.8773858] [Trace] Overlay::Show
+[19:52:03.8805269] [Trace] Overlay::ShowLayout
+[19:52:04.1048796] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[19:52:04.1459787] [Info] LayoutPreview::OnLoaded
+    Loaded No layout
+[19:52:04.1463698] [Info] LayoutPreview::OnLoaded
+    Loaded Focus
+[19:52:04.1468591] [Info] LayoutPreview::OnLoaded
+    Loaded Columns
+[19:52:04.1476280] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[19:52:04.1481071] [Info] LayoutPreview::OnLoaded
+    Loaded Grid
+[19:52:04.1486638] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[19:52:04.1492409] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side
+[19:52:04.1496567] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[19:52:06.8930846] [Trace] MainWindow::Apply
+[19:52:06.8953169] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[19:52:07.8492598] [Trace] MainWindow::EditLayout_Click
+[19:52:07.8898077] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[19:52:07.8903705] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[19:52:10.7866643] [Trace] MainWindow::DuplicateLayout_Click
+[19:52:10.8005230] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid (1)
+[19:52:12.0677297] [Trace] MainWindow::Apply
+[19:52:12.0688071] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[19:52:18.7921834] [Trace] MainWindow::EditLayout_Click
+[19:52:18.8334724] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid (1)
+[19:52:21.7746441] [Trace] MainWindow::EditLayoutDialog_PrimaryButtonClick
+[19:52:21.7753081] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[19:52:24.1220252] [Trace] MainWindow::EditLayout_Click
+[19:52:24.1341824] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus
+[19:52:25.8140225] [Trace] MainWindow::EditZones_Click
+[19:52:25.8280084] [Trace] Overlay::OpenEditor
+[19:52:27.6427031] [Trace] GridEditor::OnSplit
+[19:52:27.6434320] [Trace] GridData::Split
+[19:52:34.2572649] [Trace] GridData::Drag
+[19:52:35.4994232] [Trace] GridEditor::OnSplit
+[19:52:35.4996496] [Trace] GridData::Split
+[19:52:37.4440888] [Trace] EditorWindow::OnSave
+[19:52:37.4749844] [Trace] Overlay::CloseEditor
+[19:52:37.4947416] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus
+[19:52:39.1423996] [Trace] MainWindow::OnClosing
+[19:52:39.1425826] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[19:52:39.2262823] [Info] App::Dispose
+    FancyZones Editor disposed
+[19:52:39.2264907] [Info] App::OnExit
+    FancyZones Editor exited
+[19:53:03.8372213] [Trace] FancyZonesEditorIO::ParseParams
+[19:53:03.9082301] [Trace] Overlay::ShowLayout
+[19:53:04.2090015] [Trace] FancyZonesEditorIO::ParseLayoutTemplates
+[19:53:04.2218037] [Trace] FancyZonesEditorIO::SetTemplateLayouts
+[19:53:04.2251741] [Trace] FancyZonesEditorIO::ParseCustomLayouts
+[19:53:04.2368831] [Trace] FancyZonesEditorIO::SetCustomLayouts
+[19:53:04.2450311] [Trace] FancyZonesEditorIO::ParseDefaultLayouts
+[19:53:04.2610417] [Trace] FancyZonesEditorIO::SetDefaultLayouts
+[19:53:04.2628904] [Trace] FancyZonesEditorIO::ParseLayoutHotkeys
+[19:53:04.2702177] [Trace] FancyZonesEditorIO::SetLayoutHotkeys
+[19:53:04.2732074] [Trace] FancyZonesEditorIO::ParseAppliedLayouts
+[19:53:04.2926273] [Trace] FancyZonesEditorIO::SetAppliedLayouts
+[19:53:04.2935976] [Trace] Overlay::Show
+[19:53:04.2969025] [Trace] Overlay::ShowLayout
+[19:53:04.5308043] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus
+[19:53:04.5761663] [Info] LayoutPreview::OnLoaded
+    Loaded No layout
+[19:53:04.5768578] [Info] LayoutPreview::OnLoaded
+    Loaded Focus
+[19:53:04.5774963] [Info] LayoutPreview::OnLoaded
+    Loaded Columns
+[19:53:04.5780946] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[19:53:04.5785017] [Info] LayoutPreview::OnLoaded
+    Loaded Grid
+[19:53:04.5966033] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[19:53:04.5973872] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side
+[19:53:04.5977897] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[19:53:04.5983184] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus
+[19:53:05.9615538] [Trace] MainWindow::EditLayout_Click
+[19:53:06.0294718] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus
+[19:53:06.0304832] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus
+[19:53:09.2197476] [Trace] MainWindow::DuplicateLayout_Click
+[19:53:09.2439466] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[19:53:10.3708697] [Trace] MainWindow::Apply
+[19:53:10.3726853] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[19:53:14.2875481] [Trace] MainWindow::EditLayout_Click
+[19:53:14.2993513] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[19:53:15.9733823] [Trace] MainWindow::EditZones_Click
+[19:53:15.9898423] [Trace] Overlay::OpenEditor
+[19:53:17.7387412] [Trace] GridEditor::OnMergeComplete
+[19:53:18.8510027] [Trace] GridData::DoMerge
+[19:53:20.4335512] [Trace] EditorWindow::OnSave
+[19:53:20.4707906] [Trace] Overlay::CloseEditor
+[19:53:20.4919397] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[19:53:22.5277593] [Trace] MainWindow::OnClosing
+[19:53:22.5279599] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[19:53:22.6176269] [Info] App::Dispose
+    FancyZones Editor disposed
+[19:53:22.6178657] [Info] App::OnExit
+    FancyZones Editor exited
+[20:12:27.7331048] [Trace] FancyZonesEditorIO::ParseParams
+[20:12:27.7952998] [Trace] Overlay::ShowLayout
+[20:12:28.0834831] [Trace] FancyZonesEditorIO::ParseLayoutTemplates
+[20:12:28.0952461] [Trace] FancyZonesEditorIO::SetTemplateLayouts
+[20:12:28.0985324] [Trace] FancyZonesEditorIO::ParseCustomLayouts
+[20:12:28.1103445] [Trace] FancyZonesEditorIO::SetCustomLayouts
+[20:12:28.1176414] [Trace] FancyZonesEditorIO::ParseDefaultLayouts
+[20:12:28.1317325] [Trace] FancyZonesEditorIO::SetDefaultLayouts
+[20:12:28.1333139] [Trace] FancyZonesEditorIO::ParseLayoutHotkeys
+[20:12:28.1404611] [Trace] FancyZonesEditorIO::SetLayoutHotkeys
+[20:12:28.1433396] [Trace] FancyZonesEditorIO::ParseAppliedLayouts
+[20:12:28.1622777] [Trace] FancyZonesEditorIO::SetAppliedLayouts
+[20:12:28.1632519] [Trace] Overlay::Show
+[20:12:28.1663697] [Trace] Overlay::ShowLayout
+[20:12:28.3921876] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:12:28.4598620] [Info] LayoutPreview::OnLoaded
+    Loaded No layout
+[20:12:28.4603379] [Info] LayoutPreview::OnLoaded
+    Loaded Focus
+[20:12:28.4607976] [Info] LayoutPreview::OnLoaded
+    Loaded Columns
+[20:12:28.4613766] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[20:12:28.4617777] [Info] LayoutPreview::OnLoaded
+    Loaded Grid
+[20:12:28.4622780] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[20:12:28.4628160] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side
+[20:12:28.4632152] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[20:12:28.4637126] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus
+[20:12:28.4643925] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:12:30.9567170] [Trace] MainWindow::EditLayout_Click
+[20:12:31.0183183] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:12:31.0191637] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:12:32.3897601] [Trace] MainWindow::EditZones_Click
+[20:12:32.4140277] [Trace] Overlay::OpenEditor
+[20:12:34.1295031] [Trace] Overlay::CloseEditor
+[20:12:34.1506758] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:12:34.3570646] [Trace] MainWindow::OnClosing
+[20:12:34.3577906] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[20:12:34.4053819] [Error] FancyZonesEditorIO::SerializeLayoutHotkeys
+    Serialize quick layout keys error
+System.FormatException: The input string 'None' was not in a correct format.
+Stack trace: 
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, IFormatProvider provider)
+   at FancyZonesEditor.Utils.FancyZonesEditorIO.SerializeLayoutHotkeys()
+[20:12:34.4903296] [Info] App::Dispose
+    FancyZones Editor disposed
+[20:12:34.4905897] [Info] App::OnExit
+    FancyZones Editor exited
+[20:13:32.8003499] [Trace] FancyZonesEditorIO::ParseParams
+[20:13:32.8616938] [Trace] Overlay::ShowLayout
+[20:13:33.1323091] [Trace] FancyZonesEditorIO::ParseLayoutTemplates
+[20:13:33.1435142] [Trace] FancyZonesEditorIO::SetTemplateLayouts
+[20:13:33.1468178] [Trace] FancyZonesEditorIO::ParseCustomLayouts
+[20:13:33.1576990] [Trace] FancyZonesEditorIO::SetCustomLayouts
+[20:13:33.1648865] [Trace] FancyZonesEditorIO::ParseDefaultLayouts
+[20:13:33.1796240] [Trace] FancyZonesEditorIO::SetDefaultLayouts
+[20:13:33.1813615] [Trace] FancyZonesEditorIO::ParseLayoutHotkeys
+[20:13:33.1888432] [Trace] FancyZonesEditorIO::SetLayoutHotkeys
+[20:13:33.1917920] [Trace] FancyZonesEditorIO::ParseAppliedLayouts
+[20:13:33.2105531] [Trace] FancyZonesEditorIO::SetAppliedLayouts
+[20:13:33.2114595] [Trace] Overlay::Show
+[20:13:33.2145607] [Trace] Overlay::ShowLayout
+[20:13:33.4533757] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:13:33.5016464] [Info] LayoutPreview::OnLoaded
+    Loaded No layout
+[20:13:33.5153441] [Info] LayoutPreview::OnLoaded
+    Loaded Focus
+[20:13:33.5158499] [Info] LayoutPreview::OnLoaded
+    Loaded Columns
+[20:13:33.5164621] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[20:13:33.5168756] [Info] LayoutPreview::OnLoaded
+    Loaded Grid
+[20:13:33.5173757] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[20:13:33.5178708] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side
+[20:13:33.5182984] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[20:13:33.5188095] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus
+[20:13:33.5194823] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:13:35.9376816] [Trace] MainWindow::OnClosing
+[20:13:35.9383316] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[20:13:36.0305561] [Info] App::Dispose
+    FancyZones Editor disposed
+[20:13:36.0308773] [Info] App::OnExit
+    FancyZones Editor exited
+[20:14:05.0066051] [Trace] FancyZonesEditorIO::ParseParams
+[20:14:05.0688784] [Trace] Overlay::ShowLayout
+[20:14:05.3611950] [Trace] FancyZonesEditorIO::ParseLayoutTemplates
+[20:14:05.3727476] [Trace] FancyZonesEditorIO::SetTemplateLayouts
+[20:14:05.3759955] [Trace] FancyZonesEditorIO::ParseCustomLayouts
+[20:14:05.3886475] [Trace] FancyZonesEditorIO::SetCustomLayouts
+[20:14:05.3959919] [Trace] FancyZonesEditorIO::ParseDefaultLayouts
+[20:14:05.4101827] [Trace] FancyZonesEditorIO::SetDefaultLayouts
+[20:14:05.4117500] [Trace] FancyZonesEditorIO::ParseLayoutHotkeys
+[20:14:05.4190325] [Trace] FancyZonesEditorIO::SetLayoutHotkeys
+[20:14:05.4219506] [Trace] FancyZonesEditorIO::ParseAppliedLayouts
+[20:14:05.4405514] [Trace] FancyZonesEditorIO::SetAppliedLayouts
+[20:14:05.4414574] [Trace] Overlay::Show
+[20:14:05.4445164] [Trace] Overlay::ShowLayout
+[20:14:05.6710083] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:14:05.7190334] [Info] LayoutPreview::OnLoaded
+    Loaded No layout
+[20:14:05.7348846] [Info] LayoutPreview::OnLoaded
+    Loaded Focus
+[20:14:05.7354178] [Info] LayoutPreview::OnLoaded
+    Loaded Columns
+[20:14:05.7360010] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[20:14:05.7364043] [Info] LayoutPreview::OnLoaded
+    Loaded Grid
+[20:14:05.7369100] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[20:14:05.7374084] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side
+[20:14:05.7378448] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[20:14:05.7383434] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus
+[20:14:05.7390220] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:14:07.0775252] [Trace] MainWindow::EditLayout_Click
+[20:14:07.1408493] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:14:07.1417782] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:14:09.9416465] [Trace] MainWindow::EditZones_Click
+[20:14:09.9602941] [Trace] Overlay::OpenEditor
+[20:14:16.4083639] [Trace] Overlay::CloseEditor
+[20:14:16.4393644] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[20:14:17.9718128] [Trace] MainWindow::OnClosing
+[20:14:17.9725556] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[20:14:18.0003202] [Error] FancyZonesEditorIO::SerializeLayoutHotkeys
+    Serialize quick layout keys error
+System.FormatException: The input string 'None' was not in a correct format.
+Stack trace: 
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, IFormatProvider provider)
+   at FancyZonesEditor.Utils.FancyZonesEditorIO.SerializeLayoutHotkeys()
+[20:14:18.0669235] [Info] App::Dispose
+    FancyZones Editor disposed
+[20:14:18.0671521] [Info] App::OnExit
+    FancyZones Editor exited
+[23:31:23.3573727] [Trace] FancyZonesEditorIO::ParseParams
+[23:31:23.4208616] [Trace] Overlay::ShowLayout
+[23:31:23.7038984] [Trace] FancyZonesEditorIO::ParseLayoutTemplates
+[23:31:23.7156490] [Trace] FancyZonesEditorIO::SetTemplateLayouts
+[23:31:23.7188714] [Trace] FancyZonesEditorIO::ParseCustomLayouts
+[23:31:23.7306960] [Trace] FancyZonesEditorIO::SetCustomLayouts
+[23:31:23.7387444] [Trace] FancyZonesEditorIO::ParseDefaultLayouts
+[23:31:23.7532890] [Trace] FancyZonesEditorIO::SetDefaultLayouts
+[23:31:23.7549820] [Trace] FancyZonesEditorIO::ParseLayoutHotkeys
+[23:31:23.7628059] [Trace] FancyZonesEditorIO::SetLayoutHotkeys
+[23:31:23.7657971] [Trace] FancyZonesEditorIO::ParseAppliedLayouts
+[23:31:23.7849379] [Trace] FancyZonesEditorIO::SetAppliedLayouts
+[23:31:23.7859291] [Trace] Overlay::Show
+[23:31:23.7892950] [Trace] Overlay::ShowLayout
+[23:31:24.0564739] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[23:31:24.1035464] [Info] LayoutPreview::OnLoaded
+    Loaded No layout
+[23:31:24.1183391] [Info] LayoutPreview::OnLoaded
+    Loaded Focus
+[23:31:24.1188789] [Info] LayoutPreview::OnLoaded
+    Loaded Columns
+[23:31:24.1194491] [Info] LayoutPreview::OnLoaded
+    Loaded Rows
+[23:31:24.1198537] [Info] LayoutPreview::OnLoaded
+    Loaded Grid
+[23:31:24.1203539] [Info] LayoutPreview::OnLoaded
+    Loaded Priority Grid
+[23:31:24.1208526] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side
+[23:31:24.1212392] [Info] LayoutPreview::OnLoaded
+    Loaded Left Side 1/2
+[23:31:24.1217380] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus
+[23:31:24.1224218] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[23:31:26.8710385] [Trace] MainWindow::EditLayout_Click
+[23:31:26.9329937] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[23:31:26.9337943] [Info] LayoutPreview::OnLoaded
+    Loaded Main Focus (1)
+[23:31:48.3857035] [Trace] MainWindow::OnClosing
+[23:31:48.3865109] [Trace] FancyZonesEditorIO::SerializeAppliedLayouts
+[23:31:48.4148833] [Error] FancyZonesEditorIO::SerializeLayoutHotkeys
+    Serialize quick layout keys error
+System.FormatException: The input string 'None' was not in a correct format.
+Stack trace: 
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, IFormatProvider provider)
+   at FancyZonesEditor.Utils.FancyZonesEditorIO.SerializeLayoutHotkeys()
+[23:31:48.4601639] [Info] App::Dispose
+    FancyZones Editor disposed
+[23:31:48.4604431] [Info] App::OnExit
+    FancyZones Editor exited

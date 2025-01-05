@@ -1,0 +1,6 @@
+[2025-01-04 01:12:49.527420] [p-9360] [t-9396] [info] ShortcutGuideModule::disable()
+[2025-01-04 01:12:49.527873] [p-9360] [t-9396] [trace] GetHotkeyEx()
+[2025-01-04 15:50:47.324474] [p-15600] [t-15588] [info] shortcut-guide logger is initialized
+[2025-01-04 15:50:47.325827] [p-15600] [t-15588] [trace] GetHotkeyEx()
+[2025-01-04 20:18:46.866159] [p-20276] [t-18400] [info] shortcut-guide logger is initialized
+[2025-01-04 20:18:46.867087] [p-20276] [t-18400] [trace] GetHotkeyEx()
