@@ -1,6 +1,0 @@
-[2025-01-04 01:12:26.286650] [p-9360] [t-9396] [trace] Disabling Awake...
-[2025-01-04 01:12:26.287334] [p-9360] [t-9396] [trace] Signaled exit event for PowerToys Awake.
-[2025-01-04 15:50:47.405617] [p-15600] [t-15588] [info] launcher logger is initialized
-[2025-01-04 15:50:47.405778] [p-15600] [t-15588] [info] Launcher object is constructing
-[2025-01-04 20:18:46.879279] [p-20276] [t-18400] [info] launcher logger is initialized
-[2025-01-04 20:18:46.879407] [p-20276] [t-18400] [info] Launcher object is constructing

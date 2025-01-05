@@ -1,2 +1,0 @@
-[01:14:08.0195523] [Info] App::OnLaunched
-    EnvironmentVariables started from the PowerToys Runner. Runner pid=9360.

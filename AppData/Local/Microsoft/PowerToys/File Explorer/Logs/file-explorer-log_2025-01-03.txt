@@ -1,8 +1,0 @@
-[2025-01-03 21:08:19.962334] [p-8252] [t-14004] [info] FileExplorer logger is initialized
-[2025-01-03 21:08:19.962420] [p-8252] [t-14004] [info] Initializing PowerPreviewModule
-[2025-01-03 22:54:35.101308] [p-9360] [t-9396] [info] FileExplorer logger is initialized
-[2025-01-03 22:54:35.101437] [p-9360] [t-9396] [info] Initializing PowerPreviewModule
-[2025-01-03 23:18:39.065212] [p-9360] [t-9396] [info] isApplied of HKCU\Software\Classes\CLSID\{A5A41CC7-02CB-41D4-8C9B-9087040D6098}\DisplayName:Pdf Preview Handler: RegOpenKeyExW failed: unknown error
-[2025-01-03 23:18:39.065604] [p-9360] [t-9396] [info] isApplied of HKCU\Software\Classes\CLSID\{D8BB9942-93BD-412D-87E4-33FAB214DC1A}\DisplayName:Pdf Thumbnail Provider: RegOpenKeyExW failed: unknown error
-[2025-01-03 23:18:39.068998] [p-9360] [t-9396] [info] isApplied of HKCU\Software\Classes\CLSID\{A5A41CC7-02CB-41D4-8C9B-9087040D6098}\DisplayName:Pdf Preview Handler: RegOpenKeyExW failed: unknown error
-[2025-01-03 23:18:39.069254] [p-9360] [t-9396] [info] isApplied of HKCU\Software\Classes\CLSID\{D8BB9942-93BD-412D-87E4-33FAB214DC1A}\DisplayName:Pdf Thumbnail Provider: RegOpenKeyExW failed: unknown error

@@ -1,2 +1,0 @@
-[01:13:12.8838684] [Info] PreviewSettings::LoadSettingsFromJson
-    Peek preview-settings.json was missing, creating a new one

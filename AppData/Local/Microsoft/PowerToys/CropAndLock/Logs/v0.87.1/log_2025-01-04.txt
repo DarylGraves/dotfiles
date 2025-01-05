@@ -1,1 +1,0 @@
-[2025-01-04 01:12:39.163743] [p-5692] [t-11352] [trace] Received an exit event.

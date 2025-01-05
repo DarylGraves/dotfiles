@@ -1,5 +1,0 @@
-[2025-01-03 21:08:20.145883] [p-8252] [t-14004] [info] powerrename logger is initialized
-[2025-01-03 21:08:29.665506] [p-8252] [t-14004] [info] PowerRename enabled
-[2025-01-03 21:08:30.331292] [p-8252] [t-14004] [info] Register C:\Users\dgrav\AppData\Local\PowerToys\WinUI3Apps\PowerRenameContextMenuPackage.msix package completed.
-[2025-01-03 22:54:35.308648] [p-9360] [t-9396] [info] powerrename logger is initialized
-[2025-01-03 22:54:39.991415] [p-9360] [t-9396] [info] PowerRename enabled

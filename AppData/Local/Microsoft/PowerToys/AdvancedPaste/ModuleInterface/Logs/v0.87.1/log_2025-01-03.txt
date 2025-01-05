@@ -1,8 +1,0 @@
-[2025-01-03 21:08:20.622842] [p-8252] [t-14004] [info] AdvancedPaste logger is initialized
-[2025-01-03 21:08:21.169583] [p-8252] [t-14004] [trace] AdvancedPaste::enable()
-[2025-01-03 21:08:21.169721] [p-8252] [t-14004] [trace] Starting AdvancedPaste process
-[2025-01-03 21:08:21.278439] [p-8252] [t-14004] [trace] Successfully started the Advanced Paste process
-[2025-01-03 22:54:36.314233] [p-9360] [t-9396] [info] AdvancedPaste logger is initialized
-[2025-01-03 22:54:37.236033] [p-9360] [t-9396] [trace] AdvancedPaste::enable()
-[2025-01-03 22:54:37.236195] [p-9360] [t-9396] [trace] Starting AdvancedPaste process
-[2025-01-03 22:54:37.305796] [p-9360] [t-9396] [trace] Successfully started the Advanced Paste process

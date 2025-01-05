@@ -1,3 +1,0 @@
-[2025-01-04 01:13:34.678438] [p-9360] [t-9396] [trace] HostsModuleInterface::disable()
-[2025-01-04 15:50:48.618294] [p-15600] [t-15588] [info] hosts logger is initialized
-[2025-01-04 20:18:46.971413] [p-20276] [t-18400] [info] hosts logger is initialized

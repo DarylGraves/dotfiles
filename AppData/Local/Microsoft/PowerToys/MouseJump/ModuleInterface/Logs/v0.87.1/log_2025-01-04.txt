@@ -1,2 +1,0 @@
-[2025-01-04 15:50:47.884929] [p-15600] [t-15588] [info] mouse-jump logger is initialized
-[2025-01-04 20:18:46.901644] [p-20276] [t-18400] [info] mouse-jump logger is initialized

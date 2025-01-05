@@ -1,9 +1,0 @@
-[2025-01-04 01:12:52.018472] [p-9360] [t-9396] [info] Terminating the highlighter instance.
-[2025-01-04 01:12:52.019467] [p-9360] [t-11272] [info] Stopping draw mode.
-[2025-01-04 01:12:52.021092] [p-9360] [t-11272] [info] Mouse highlighter message loop ended.
-[2025-01-04 15:50:47.791243] [p-15600] [t-15588] [info] mouse-highlighter logger is initialized
-[2025-01-04 15:50:47.792241] [p-15600] [t-15588] [error] Left click color ARGB value is invalid. Will use default value
-[2025-01-04 15:50:47.792333] [p-15600] [t-15588] [error] Right click color ARGB value is invalid. Will use default value
-[2025-01-04 20:18:46.894517] [p-20276] [t-18400] [info] mouse-highlighter logger is initialized
-[2025-01-04 20:18:46.895747] [p-20276] [t-18400] [error] Left click color ARGB value is invalid. Will use default value
-[2025-01-04 20:18:46.895841] [p-20276] [t-18400] [error] Right click color ARGB value is invalid. Will use default value

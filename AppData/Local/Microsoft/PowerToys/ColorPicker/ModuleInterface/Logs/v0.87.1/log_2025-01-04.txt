@@ -1,3 +1,0 @@
-[2025-01-04 01:12:31.484468] [p-9360] [t-9396] [trace] ColorPicker::disable()
-[2025-01-04 15:50:47.334799] [p-15600] [t-15588] [info] ColorPicker logger is initialized
-[2025-01-04 20:18:46.872207] [p-20276] [t-18400] [info] ColorPicker logger is initialized

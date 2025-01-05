@@ -1,6 +1,0 @@
-[2025-01-04 01:14:05.253659] [p-9360] [t-10904] [trace] Local\PowerToysEnvironmentVariables-EnvironmentVariablesAdminEvent-8c95d2ad-047c-49a2-9e8b-b4656326cfb2 event was signaled
-[2025-01-04 01:14:05.254062] [p-9360] [t-10904] [trace] EnvironmentVariablesModuleInterface::launch_process()
-[2025-01-04 01:14:07.367687] [p-9360] [t-10904] [trace] Successfully started the Environment Variables process
-[2025-01-04 01:14:14.506317] [p-9360] [t-9396] [trace] EnvironmentVariablesModuleInterface::disable()
-[2025-01-04 15:50:48.685189] [p-15600] [t-15588] [info] environment-variables logger is initialized
-[2025-01-04 20:18:47.010979] [p-20276] [t-18400] [info] environment-variables logger is initialized

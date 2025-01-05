@@ -1,6 +1,0 @@
-[2025-01-03 21:08:20.698453] [p-8252] [t-14004] [info] RegistryPreview logger is initialized
-[2025-01-03 21:08:20.698619] [p-8252] [t-14004] [info] Registry Preview object is constructing
-[2025-01-03 21:08:20.699155] [p-8252] [t-14004] [info] Registry Preview settings are empty
-[2025-01-03 22:54:36.560239] [p-9360] [t-9396] [info] RegistryPreview logger is initialized
-[2025-01-03 22:54:36.560667] [p-9360] [t-9396] [info] Registry Preview object is constructing
-[2025-01-03 22:54:36.561237] [p-9360] [t-9396] [info] Registry Preview settings are empty

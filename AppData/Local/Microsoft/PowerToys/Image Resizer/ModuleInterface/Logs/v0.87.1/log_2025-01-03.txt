@@ -1,3 +1,0 @@
-[2025-01-03 21:08:20.010905] [p-8252] [t-14004] [info] imageresizer logger is initialized
-[2025-01-03 21:08:29.543292] [p-8252] [t-14004] [info] Register C:\Users\dgrav\AppData\Local\PowerToys\ImageResizerContextMenuPackage.msix package completed.
-[2025-01-03 22:54:35.141893] [p-9360] [t-9396] [info] imageresizer logger is initialized

@@ -1,2 +1,0 @@
-[2025-01-05 11:25:35.411526] [p-13992] [t-13860] [info] FileLocksmith logger is initialized
-[2025-01-05 11:25:37.950555] [p-13992] [t-13860] [info] File Locksmith enabled
