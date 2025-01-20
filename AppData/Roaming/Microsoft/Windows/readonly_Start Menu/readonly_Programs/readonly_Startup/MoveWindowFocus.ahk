@@ -71,6 +71,7 @@ Alt & l:: MoveFocus("right")
 #HotIf
 
 ; New Outlook Quick Action Steps
-^+1::^+5
-^+2::^+6
-^+3::^+7
+^+1::Send ^+5
+^+2::Send ^+6
+^+3::Send ^+7
+
