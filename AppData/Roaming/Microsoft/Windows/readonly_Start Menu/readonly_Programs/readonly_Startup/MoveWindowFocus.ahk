@@ -69,3 +69,8 @@ Alt & j:: MoveFocus("down")
 Alt & k:: MoveFocus("up")
 Alt & l:: MoveFocus("right")
 #HotIf
+
+; New Outlook Quick Action Steps
+^+1::^+5
+^+2::^+6
+^+3::^+7
