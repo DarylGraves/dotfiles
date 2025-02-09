@@ -71,22 +71,22 @@ Alt & l:: MoveFocus("right")
 #HotIf
 
 ; Hotkeys for Window Management using Alt+Shift
-; Overrides default behavior to reposition windows
 #HotIf GetKeyState("Shift", "P")  ; Only execute if Shift is pressed
-!+h::
-!+j::
-!+k::
-!+l::
-    Send "{Blind}{vkE8}"  ; Prevent Windows from registering Alt+Shift+Key
-    Sleep 50  ; Small delay to avoid issues
-    if (A_ThisHotkey = "!+h")
-        Send "#{Left}"  ; Move window to the left
-    else if (A_ThisHotkey = "!+j")
-        Send "#{Up}"    ; Maximize window
-    else if (A_ThisHotkey = "!+k")
-        Send "#{Down}"  ; Minimize/restore window
-    else if (A_ThisHotkey = "!+l")
-        Send "#{Right}" ; Move window to the right
+*!+h::
+*!+j::
+*!+k::
+*!+l::
+    SetKeyDelay -1  ; Prevents lag in sending keys
+    SendInput "{Blind}{LWin Down}"  ; Hold Windows key
+    if (A_ThisHotkey = "*!+h")
+        SendInput "{Left}"
+    else if (A_ThisHotkey = "*!+j")
+        SendInput "{Up}"
+    else if (A_ThisHotkey = "*!+k")
+        SendInput "{Down}"
+    else if (A_ThisHotkey = "*!+l")
+        SendInput "{Right}"
+    SendInput "{LWin Up}"  ; Release Windows key
     return
 #HotIf
 
