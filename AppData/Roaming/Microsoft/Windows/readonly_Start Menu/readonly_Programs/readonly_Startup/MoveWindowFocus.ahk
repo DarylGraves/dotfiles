@@ -72,27 +72,20 @@ Alt & l:: MoveFocus("right")
 
 ; Hotkeys for Window Management using Alt+Shift
 #HotIf GetKeyState("Shift", "P")  ; Only execute if Shift is pressed
-*!+h:: {
-    SetKeyDelay -1
-    SendInput "{LWin Down}{Left}{LWin Up}"
-    return
-}
-*!+j:: {
-    SetKeyDelay -1
-    SendInput "{LWin Down}{Up}{LWin Up}"
-    return
-}
-*!+k:: {
-    SetKeyDelay -1
-    SendInput "{LWin Down}{Down}{LWin Up}"
-    return
-}
-*!+l:: {
-    SetKeyDelay -1
-    SendInput "{LWin Down}{Right}{LWin Up}"
-    return
-}
+
+*!+h:: MoveWindow("Left")
+*!+j:: MoveWindow("Up")
+*!+k:: MoveWindow("Down")
+*!+l:: MoveWindow("Right")
+
 #HotIf
+
+MoveWindow(direction) {
+    SetKeyDelay(-1)  ; Minimize lag
+    Send("{LWin Down}")
+    Send("{" direction "}")
+    Send("{LWin Up}")
+}
 
 ; New Outlook Quick Action Steps
 ^+1::Send("^+5")
