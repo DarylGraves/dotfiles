@@ -70,6 +70,15 @@ Alt & k:: MoveFocus("up")
 Alt & l:: MoveFocus("right")
 #HotIf
 
+; Hotkeys for Window Management using Alt+Shift
+; Overrides default behavior to reposition windows
+#HotIf GetKeyState("Shift", "P")  ; Only execute if Shift is pressed
+!+h::Send "#{Left}"  ; Move window to the left
+!+j::Send "#{Up}"    ; Maximize window
+!+k::Send "#{Down}"  ; Minimize/restore window
+!+l::Send "#{Right}" ; Move window to the right
+#HotIf
+
 ; New Outlook Quick Action Steps
 ^+1::Send("^+5")
 ^+2::Send("^+6")
