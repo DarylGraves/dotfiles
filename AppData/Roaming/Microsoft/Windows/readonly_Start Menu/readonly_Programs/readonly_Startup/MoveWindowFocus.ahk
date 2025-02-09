@@ -73,15 +73,16 @@ Alt & l:: MoveFocus("right")
 ; Hotkeys for Window Management using Alt+Shift
 #HotIf GetKeyState("Shift", "P")  ; Only execute if Shift is pressed
 
-*!+h:: MoveWindow("Left")
-*!+j:: MoveWindow("Up")
-*!+k:: MoveWindow("Down")
-*!+l:: MoveWindow("Right")
+~!+h:: MoveWindow("Left")
+~!+j:: MoveWindow("Up")
+~!+k:: MoveWindow("Down")
+~!+l:: MoveWindow("Right")
 
 #HotIf
 
 MoveWindow(direction) {
-    SetKeyDelay(-1)  ; Minimize lag
+    Send("{Blind}{vkE8}")  ; Suppress Windows default Alt+Shift behavior
+    Sleep 50  ; Small delay to avoid race conditions
     Send("{LWin Down}")
     Send("{" direction "}")
     Send("{LWin Up}")
