@@ -92,6 +92,9 @@ Alt & l:: MoveFocus("right")
 !+l:: MoveWindow("Right")
 #HotIf
 
+; Toggle Maximised Window
+!+Space::WinGetMinMax("A") = 1 ? WinRestore("A") : WinMaximize("A")
+
 ; New Outlook Quick Action Steps as it doesn't support Ctrl+Shift 1-4
 ^+1::Send("^+5")
 ^+2::Send("^+6")
