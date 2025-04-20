@@ -100,6 +100,6 @@ Alt & l:: MoveFocus("right")
 ^+2::Send("^+6")
 ^+3::Send("^+7")
 
-; Change Virutal Desktop using Win+Shift+H/L
+; Change Virtual Desktop using Win+Shift+H/L
 #+h::Send('^#{Left}')   ; Win+Shift+H -> Win+Ctrl+Left
 #+l::Send('^#{Right}')  ; Win+Shift+L -> Win+Ctrl+Right
