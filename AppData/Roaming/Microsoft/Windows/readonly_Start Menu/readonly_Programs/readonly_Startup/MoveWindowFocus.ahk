@@ -58,26 +58,6 @@ WindowFromPoint(X, Y) {
         , "UInt", 2)  ; GA_ROOT = 2
 }
 
-; --------------------------------------------------------------
-; Hotkeys
-; --------------------------------------------------------------
-
-; Hotkeys for Moving Focus
-#HotIf !GetKeyState("Shift", "P")  ; Only execute if Shift is NOT pressed
-Alt & h:: MoveFocus("left")
-Alt & j:: MoveFocus("down")
-Alt & k:: MoveFocus("up")
-Alt & l:: MoveFocus("right")
-#HotIf
-
-; Hotkeys for Window Management using Alt+Shift
-#HotIf GetKeyState("Shift", "P")  ; Only execute if Shift is pressed
-!+h:: MoveWindow("Left")
-!+j:: MoveWindow("Up")
-!+k:: MoveWindow("Down")
-!+l:: MoveWindow("Right")
-#HotIf
-
 MoveWindow(direction) {
 	A_MenuMaskKey := "vkE8"
     BlockInput(true)
@@ -86,8 +66,37 @@ MoveWindow(direction) {
     Send("{LWin Up}")
 }
 
-; New Outlook Quick Action Steps
+; --------------------------------------------------------------
+; Hotkeys
+; --------------------------------------------------------------
+
+; Block Alt+H/L if Ctrl is down to allow Ctrl+Alt+H/L
+#HotIf GetKeyState("Ctrl", "P")
+Alt & h::return
+Alt & l::return
+#HotIf
+
+; Hotkeys for Moving Focus
+#HotIf !GetKeyState("Shift", "P") && !GetKeyState("Ctrl", "P")
+Alt & h:: MoveFocus("left")
+Alt & j:: MoveFocus("down")
+Alt & k:: MoveFocus("up")
+Alt & l:: MoveFocus("right")
+#HotIf
+
+; Hotkeys for Window Management using Alt+Shift
+#HotIf GetKeyState("Shift", "P")
+!+h:: MoveWindow("Left")
+!+j:: MoveWindow("Up")
+!+k:: MoveWindow("Down")
+!+l:: MoveWindow("Right")
+#HotIf
+
+; New Outlook Quick Action Steps as it doesn't support Ctrl+Shift 1-4
 ^+1::Send("^+5")
 ^+2::Send("^+6")
 ^+3::Send("^+7")
 
+; Change Virutal Desktop using Win+Shift+H/L
+#+h::Send('^#{Left}')   ; Win+Shift+H -> Win+Ctrl+Left
+#+l::Send('^#{Right}')  ; Win+Shift+L -> Win+Ctrl+Right
