@@ -9,7 +9,7 @@ Set-PSReadLineOption -PredictionSource HistoryAndPlugin
 
 # New install, create registry folder
 if (!(Test-Path -Path $BaseRegistryPath)) {
-	New-Item -Path $BaseRegistryPath -Force
+	New-Item -Path $BaseRegistryPath -Force | Out-Null
 }
 
 #################################################
@@ -59,7 +59,7 @@ catch {
 # Modules
 #################################################
 $RegistryPath = $BaseRegistryPath + "InstalledModules"
-$RequiredModules = @("Az", "CompletionPredictor", "Terminal-Icons", "ImportExcel", "PSWriteHTML", "PwshSpectreConsole")
+$RequiredModules = @("Az", "CompletionPredictor", "Terminal-Icons", "ImportExcel", "PSWriteHTML", "PwshSpectreConsole", "Terminal-Icons")
 
 if (!(Test-Path -Path $RegistryPath)) {
 	New-Item -Path $RegistryPath -Force
@@ -107,6 +107,11 @@ function vi {
 function hosts {
 	notepad "C:\Windows\System32\drivers\etc\hosts"
 }
+
+#################################################
+# Calling any Modules
+#################################################
+Import-Module Terminal-Icons
 
 #################################################
 # Work Specific - Seperate so it doesn't sync 
