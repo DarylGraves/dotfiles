@@ -86,6 +86,11 @@ foreach ($Module in $RequiredModules) {
 }
 
 #################################################
+# Fzf
+#################################################
+Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
+
+#################################################
 # Aliases
 #################################################
 Set-Alias -Name "adu" -Value "Get-AdUser"
