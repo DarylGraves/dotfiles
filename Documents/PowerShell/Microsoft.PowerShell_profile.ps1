@@ -104,6 +104,10 @@ function vi {
 	& "C:\Program Files\Vim\vim91\vim.exe" $args && echo "`e[5 q"
 }
 
+function nvim {
+	& ""C:\Program Files\Neovim\bin\nvim.exe"
+}
+
 function hosts {
 	notepad "C:\Windows\System32\drivers\etc\hosts"
 }
