@@ -24,14 +24,6 @@
         {
             "command": 
             {
-                "action": "newTab"
-            },
-            "id": "User.newTab.5DEADB41",
-            "keys": "ctrl+t"
-        },
-        {
-            "command": 
-            {
                 "action": "copy",
                 "singleLine": false
             },
