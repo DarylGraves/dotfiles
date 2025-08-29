@@ -121,7 +121,7 @@ Import-Module Terminal-Icons
 # Work Specific - Seperate so it doesn't sync 
 #################################################
 $ProfilePath = Split-Path -Path $Profile -Parent
-$WorkProfile = $ProfilePath + "\" + "WorkProfile.ps1"
+$WorkProfile = $ProfilePath + "\\" + "WorkProfile.ps1"
 
 if (Test-Path -Path $WorkProfile) {
 	. $WorkProfile
