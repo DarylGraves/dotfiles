@@ -88,7 +88,11 @@ foreach ($Module in $RequiredModules) {
 #################################################
 # Fzf
 #################################################
-Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
+
+if((Get-Command "fzf" -ErrorAction SilentlyContinue ).count -gt 0)
+{
+	Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
+}
 
 #################################################
 # Aliases
