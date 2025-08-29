@@ -59,7 +59,7 @@ catch {
 # Modules
 #################################################
 $RegistryPath = $BaseRegistryPath + "InstalledModules"
-$RequiredModules = @("Az", "CompletionPredictor", "Terminal-Icons", "ImportExcel", "PSWriteHTML", "PwshSpectreConsole", "Terminal-Icons")
+$RequiredModules = @("Az", "CompletionPredictor", "Terminal-Icons", "ImportExcel", "PSWriteHTML", "PwshSpectreConsole", "Terminal-Icons", "PSFzf")
 
 if (!(Test-Path -Path $RegistryPath)) {
 	New-Item -Path $RegistryPath -Force | Out-Null
