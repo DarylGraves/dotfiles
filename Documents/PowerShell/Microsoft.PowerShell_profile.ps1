@@ -89,6 +89,8 @@ foreach ($Module in $RequiredModules) {
 # Fzf
 #################################################
 
+# winget install fzf
+# Shortcuts: ctrl+t, ctrl+r, alt+c and alt+a
 if((Get-Command "fzf" -ErrorAction SilentlyContinue ).count -gt 0)
 {
 	Set-PSReadLineKeyHandler -Key Tab -ScriptBlock { Invoke-FzfTabCompletion }
