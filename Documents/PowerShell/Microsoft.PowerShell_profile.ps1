@@ -1,7 +1,7 @@
 $BaseRegistryPath = "HKCU:\Software\PowerShell\Profile\"
 
 if (!(Test-Path -Path $BaseRegistryPath)) {
-	New-Item -Path $BaseRegistryPath -Force
+	New-Item -Path $BaseRegistryPath -Force | Out-Null
 }
 
 Set-PSReadLineOption -PredictionView List
@@ -62,7 +62,7 @@ $RegistryPath = $BaseRegistryPath + "InstalledModules"
 $RequiredModules = @("Az", "CompletionPredictor", "Terminal-Icons", "ImportExcel", "PSWriteHTML", "PwshSpectreConsole", "Terminal-Icons")
 
 if (!(Test-Path -Path $RegistryPath)) {
-	New-Item -Path $RegistryPath -Force
+	New-Item -Path $RegistryPath -Force | Out-Null
 }
 
 foreach ($Module in $RequiredModules) {
@@ -105,7 +105,7 @@ function vi {
 }
 
 function nvim {
-	& ""C:\Program Files\Neovim\bin\nvim.exe"
+	& ""C:\Program Files\Neovim\bin\nvim.exe" $args
 }
 
 function hosts {
