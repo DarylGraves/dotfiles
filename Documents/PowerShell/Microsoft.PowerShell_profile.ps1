@@ -105,7 +105,7 @@ function vi {
 }
 
 function nvim {
-	& ""C:\Program Files\Neovim\bin\nvim.exe" $args
+	& "C:\Program Files\Neovim\bin\nvim.exe" $args
 }
 
 function hosts {
