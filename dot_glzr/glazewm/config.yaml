@@ -121,17 +121,6 @@ window_rules:
     match:
       - window_process: { regex: "Beeper|Discord|WhatsApp|Spotify|Obsidian"}
     
-    
-        #TODO Historic
-  #       - command: "move to workspace 2"
-  #   match_process_name: "Discord|.*WhatsApp.*"
-  # - command: "move to workspace 3"
-  #   match_title: ".*Visual Studio.*"
-  # - command: "move to workspace 5"
-  #   match_title: "Playnite|Steam"
-  # - command: "move to workspace 6"
-  #   match_title: "OneNote|.*Obsidian.*"
-
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
   - name: 'resize'
@@ -189,8 +178,10 @@ keybindings:
   # As an alternative to the resize keybindings above, resize mode enables
   # resizing via arrow keys or HJKL. The binding mode is defined above with
   # the name 'resize'.
-  - commands: ['wm-enable-binding-mode --name resize']
-    bindings: ['alt+r']
+
+# DG - Disabled because we just use the alt+u/i/o/p options
+#  - commands: ['wm-enable-binding-mode --name resize']
+#    bindings: ['alt+r']
 
   # Disables all keybindings until alt+shift+p is pressed again.
   - commands: ['wm-enable-binding-mode --name pause']
