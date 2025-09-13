@@ -106,7 +106,7 @@ window_rules:
 
       # Ignore rules for various 3rd-party apps.
       - window_process: { equals: 'PowerToys.PowerAccent' }
-      - window_process: { equals: 'Microsoft.CmdPal.UI.exe' }
+      - window_process: { equals: 'Command Palette' }
       - window_process: { equals: 'Lively' }
         window_class: { regex: 'HwndWrapper*' }
   - commands: ["move --workspace 2"]
