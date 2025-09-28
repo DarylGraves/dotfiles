@@ -3,8 +3,9 @@
 {{- end }}
 
 {{- if eq .chezmoi.os "linux" }}
-AppData/*
-Documents/*
-.glzr/*
-PowerShell/*
+AppData
+Documents
+.glzr
+PowerShell
+.config/FirstTimeSetup
 {{- end }}
