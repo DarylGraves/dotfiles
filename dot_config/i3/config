@@ -14,6 +14,7 @@
 # - Flameshot
 # - i3lock-color (not the default i3lock) + script from Chezmoi
 # - picom
+# - Steam
 
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -162,8 +163,8 @@ bindsym $mod+a focus parent
 set $ws1 "1: Main"
 set $ws2 "2: Programming"
 set $ws3 "3: Gaming"
-set $ws4 "4: Social"
-set $ws5 "5"
+set $ws4 "4: Remote"
+set $ws5 "5: Social"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -207,6 +208,12 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# load apps
+exec --no-startup-id i3-msg "workspace 3; steam -silent"
+exec --no-startup-id i3-msg "workspace 4; remmina"
+exec --no-startup-id i3-msg "workspace 5; beeper"
+exec --no-startup-id onedrivegui 
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
