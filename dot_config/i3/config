@@ -21,7 +21,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # Set second screen
-exec --no-startup-id xrandr --output DP-5 --rotate left --left-of DP-0 --mode 1920x1080
+exec --no-startup-id xrandr --output DP-5 --rotate left --left-of DP-0 --mode 1920x1080 --output DP-0 --primary
 
 # Set wallpapers
 exec-always --nostartup-id nitrogen --restore
