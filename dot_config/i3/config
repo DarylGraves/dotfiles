@@ -48,7 +48,7 @@ bindsym Mod4+8 exec obsidian
 # 9: Terminal
 bindsym Mod4+0 exec spotify-launcher
 
-bindsym $mod+period exec --no-startup-id rofimoji --action copy
+bindsym Mod4+period exec --no-startup-id rofimoji --action copy
 
 # Screenshotting
 bindsym mod4+Shift+s exec flameshot gui
