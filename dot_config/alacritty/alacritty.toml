@@ -21,3 +21,6 @@ style = "Regular"
 import = [
 	"~/.config/alacritty/themes/themes/gotham.toml"
 ]
+
+[window]
+opacity = 0.75
