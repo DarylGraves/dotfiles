@@ -216,13 +216,6 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# load apps
-exec --no-startup-id i3-msg "workspace 3; steam -silent"
-exec --no-startup-id i3-msg "workspace 4; remmina"
-exec --no-startup-id i3-msg "workspace 5; beeper"
-exec --no-startup-id onedrivegui 
-exec --no-startup-id blueman-applet 
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
