@@ -10,6 +10,7 @@
 # - Vscode
 # - Obsidian
 # - Terminal
+# - Flameshot
 # - i3lock-color (not the default i3lock) + script from Chezmoi
 
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -38,6 +39,9 @@ bindsym Mod4+4 exec beeper
 bindsym Mod4+8 exec obsidian
 # 9: Terminal
 bindsym Mod4+0 exec spotify-launcher
+
+# Screenshotting
+bindsym mod4+Shift+s exec flameshot gui
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
