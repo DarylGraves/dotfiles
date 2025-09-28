@@ -11,7 +11,7 @@ separator=true
 separator_block_width=15
 
 [music]
-command=playerctl metadata --format "{{ artist }} - {{ title }}"
+command=playerctl metadata --format "{{ title }} - {{ artist }}"
 interval=5
 
 [time]
