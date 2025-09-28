@@ -214,6 +214,7 @@ exec --no-startup-id i3-msg "workspace 3; steam -silent"
 exec --no-startup-id i3-msg "workspace 4; remmina"
 exec --no-startup-id i3-msg "workspace 5; beeper"
 exec --no-startup-id onedrivegui 
+exec --no-startup-id blueman-applet 
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
