@@ -29,6 +29,9 @@ exec-always --nostartup-id nitrogen --restore
 # Enable transparency
 exec --no-startup-id picom
 
+# OneDrive
+exec --no-startup-id onedriver ~/Documents/OneDrive
+
 # Audio buttons
 bindcode 172 exec playerctl play-pause
 bindcode 171 exec playerctl next
