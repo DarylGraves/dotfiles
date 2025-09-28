@@ -2,6 +2,15 @@
 # - xrandr
 # - nitrogen
 # - i3blocks
+# - Firefox
+# - Spotify
+# - Remmina
+# - Beeper
+# - Thunderbird
+# - Vscode
+# - Obsidian
+# - Terminal
+# - i3lock-color (not the default i3lock) + script from Chezmoi
 
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -19,6 +28,17 @@ bindcode 173 exec playerctl previous
 # Mod = Alt
 set $mod Mod1
 
+bindsym Mod4+1 exec firefox
+bindsym Mod4+2 exec thunderbird 
+bindsym Mod4+3 exec remmina
+bindsym Mod4+4 exec beeper
+# bindsym Mod4+5 exec  # Notepad?
+# bindsym Mod4+6 exec # Vscode
+# bindsym Mod4+7 exec # AI
+bindsym Mod4+8 exec obsidian
+# 9: Terminal
+bindsym Mod4+0 exec spotify-launcher
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:monospace 8
@@ -33,7 +53,8 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+bindsym Mod4+l exec ~/Scripts/Linux/i3lock-color/lock.sh
+exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/Scripts/Linux/i3lock-color/lock.sh --nofork 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -211,6 +232,7 @@ bar {
         status_command i3blocks
 	workspace_buttons yes
 	strip_workspace_numbers no
+	tray_output DP-0
 
   colors {
     background #000000
