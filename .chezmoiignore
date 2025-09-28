@@ -1,5 +1,7 @@
 {{- if eq .chezmoi.os "windows" }}
-
+.config/alacritty
+.config/i3
+.config/i3blocks
 {{- end }}
 
 {{- if eq .chezmoi.os "linux" }}

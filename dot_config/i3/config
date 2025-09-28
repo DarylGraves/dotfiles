@@ -11,6 +11,11 @@ exec --no-startup-id xrandr --output DP-5 --rotate left --left-of DP-0 --mode 19
 # Set wallpapers
 exec-always --nostartup-id nitrogen --restore
 
+# Audio buttons
+bindcode 172 exec playerctl play-pause
+bindcode 171 exec playerctl next
+bindcode 173 exec playerctl previous
+
 # Mod = Alt
 set $mod Mod1
 
