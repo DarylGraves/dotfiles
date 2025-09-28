@@ -15,6 +15,8 @@
 # - i3lock-color (not the default i3lock) + script from Chezmoi
 # - picom
 # - Steam
+# - rofimoji
+# - noto-fonts-emoji
 
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -45,6 +47,8 @@ bindsym Mod4+4 exec beeper
 bindsym Mod4+8 exec obsidian
 # 9: Terminal
 bindsym Mod4+0 exec spotify-launcher
+
+bindsym $mod+period exec --no-startup-id rofimoji --action copy
 
 # Screenshotting
 bindsym mod4+Shift+s exec flameshot gui
