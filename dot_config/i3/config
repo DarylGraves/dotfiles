@@ -24,7 +24,8 @@
 exec --no-startup-id xrandr --output DP-5 --rotate left --left-of DP-0 --mode 1920x1080 --output DP-0 --primary
 
 # Start Polybar
-exec --no-startup-id polybar
+exec --no-startup-id ~/polybar-collection/launch.sh
+
 # Set wallpapers
 exec_always --no-startup-id nitrogen --restore
 
