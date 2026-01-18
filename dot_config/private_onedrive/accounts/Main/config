@@ -1,0 +1,3 @@
+sync_dir = "/home/daryl/Documents/OneDrive"
+force_session_upload = "true"
+delay_inotify_processing = "true"
