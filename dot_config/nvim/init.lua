@@ -82,6 +82,11 @@ require('lazy').setup({
       },
     },
   },
+  {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    config = true,
+  },
   { -- Comment toggling
     'numToStr/Comment.nvim',
     config = function()
