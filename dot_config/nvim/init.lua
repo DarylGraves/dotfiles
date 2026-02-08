@@ -27,6 +27,8 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
+vim.keymap.set('n', '<C-S-.>', ':Neotree toggle<CR>', { silent = true })
+
 -- Options
 vim.o.breakindent = true
 vim.o.confirm = true
@@ -96,6 +98,20 @@ require('lazy').setup({
         require('Comment.api').toggle.linewise(vim.fn.visualmode())
       end, { silent = true })
     end,
+  },
+  {
+    'nvim-neo-tree/neo-tree.nvim',
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      'MunifTanjim/nui.nvim',
+      'nvim-tree/nvim-web-devicons', -- optional, but recommended
+    },
+    lazy = false, -- neo-tree will lazily load itself
+    opts = {
+      window = {
+        position = 'right',
+      },
+    },
   },
   { -- Useful plugin to show you pending keybinds.
     'folke/which-key.nvim',
