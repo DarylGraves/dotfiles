@@ -3,12 +3,12 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = true
---
+
 -- Sync clipboard between OS and Neovim.
 vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
---
+
 -- Highlight when yanking (copying) text
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
@@ -79,6 +79,23 @@ require('lazy').setup({
         changedelete = { text = '~' },
       },
     },
+  },
+  { -- Comment toggling
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+
+      -- Ctrl+/ (terminal reports this as Ctrl+_)
+      vim.keymap.set('n', '<C-/>', function()
+        require('Comment.api').toggle.linewise.current()
+      end, { silent = true })
+
+      vim.keymap.set('v', '<C-/>', function()
+        local esc = vim.api.nvim_replace_termcodes('<ESC>', true, false, true)
+        vim.api.nvim_feedkeys(esc, 'nx', false)
+        require('Comment.api').toggle.linewise(vim.fn.visualmode())
+      end, { silent = true })
+    end,
   },
   { -- Useful plugin to show you pending keybinds.
     'folke/which-key.nvim',
@@ -398,7 +415,7 @@ require('lazy').setup({
   },
   { -- You can easily change to a different colorscheme.
     'folke/tokyonight.nvim',
-    priority = 1000, -- Make sure to load this before all the other start plugins.
+    -- priority = 1000, -- Make sure to load this before all the other start plugins.
     config = function()
       ---@diagnostic disable-next-line: missing-fields
       require('tokyonight').setup {
@@ -406,7 +423,13 @@ require('lazy').setup({
           comments = { italic = false }, -- Disable italics in comments
         },
       }
-      vim.cmd.colorscheme 'tokyonight-night'
+      -- vim.cmd.colorscheme 'tokyonight-night'
+    end,
+  },
+  {
+    'datsfilipe/vesper.nvim',
+    config = function()
+      vim.cmd.colorscheme 'vesper'
     end,
   },
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
