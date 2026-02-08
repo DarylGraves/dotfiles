@@ -1,0 +1,5 @@
+[terminal]
+shell = "fish"
+
+[font]
+size = 9.5 
