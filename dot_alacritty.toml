@@ -1,9 +1,6 @@
+[font]
+size = 9.5
+normal = { family = "Hack Nerd Font Mono", style = "Regular" }
+
 [terminal]
 shell = "fish"
-
-[font]
-size = 9.5 
-
-[font.normal]
-family = "Hack Nerd Font Mono"
-style = "Regular"
