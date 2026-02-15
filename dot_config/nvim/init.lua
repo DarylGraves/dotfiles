@@ -46,7 +46,7 @@ vim.o.showmode = true -- Shows "INSERT", etc. Plugins may need this set to false
 vim.o.signcolumn = 'yes' -- Needed for git signs or the column will keep moving
 vim.o.smartcase = true -- If you start using upper case then go case sensitive
 vim.o.undofile = true -- Persist undos across edit sessions by saving to file
-vim.o.updatetime = true -- How quick things update after typing. Fast is better
+vim.o.updatetime = 200 -- How quick things update after typing. Fast is better
 
 -- Force splits in the right place
 vim.o.splitbelow = true
