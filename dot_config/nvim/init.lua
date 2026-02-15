@@ -76,20 +76,18 @@ require('lazy').setup {
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
   { -- Comment toggling with Ctrl+/
     'numToStr/Comment.nvim',
-    config = function()
-      require('Comment').setup()
-
-      -- Ctrl+/ (terminal reports this as Ctrl+_)
-      vim.keymap.set('n', '<C-/>', function()
-        require('Comment.api').toggle.linewise.current()
-      end, { silent = true })
-
-      vim.keymap.set('v', '<C-/>', function() -- Same but for visual
-        local esc = vim.api.nvim_replace_termcodes('<ESC>', true, false, true)
-        vim.api.nvim_feedkeys(esc, 'nx', false)
-        require('Comment.api').toggle.linewise(vim.fn.visualmode())
-      end, { silent = true })
-    end,
+    opts = {},
+    keys = {
+      -- Ctrl+/ to comment
+      {
+        '<C-_>',
+        function()
+          require('Comment.api').toggle.linewise.current()
+        end,
+        desc = 'Comment toggle',
+      },
+      { '<C-_>', 'gc', mode = 'v', remap = true, desc = 'Comment toggle' },
+    },
   },
   { -- Adds git related signs to the gutter
     'lewis6991/gitsigns.nvim',
