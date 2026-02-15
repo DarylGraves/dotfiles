@@ -75,7 +75,24 @@ rtp:prepend(lazypath)
 --------------------------------------------------------------------------------
 require('lazy').setup({
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
-  { -- Adds git related signs to the gutter, as well as utilities for managing changes
+  { -- Comment toggling with Ctrl+/
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+
+      -- Ctrl+/ (terminal reports this as Ctrl+_)
+      vim.keymap.set('n', '<C-/>', function()
+        require('Comment.api').toggle.linewise.current()
+      end, { silent = true })
+
+      vim.keymap.set('v', '<C-/>', function() -- Same but for visual
+        local esc = vim.api.nvim_replace_termcodes('<ESC>', true, false, true)
+        vim.api.nvim_feedkeys(esc, 'nx', false)
+        require('Comment.api').toggle.linewise(vim.fn.visualmode())
+      end, { silent = true })
+    end,
+  },
+  { -- Adds git related signs to the gutter
     'lewis6991/gitsigns.nvim',
     opts = {
       signs = {
@@ -87,10 +104,26 @@ require('lazy').setup({
       },
     },
   },
-  {
+  { -- Auto pairs - When type ( add ), etc
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
     config = true,
+  },
+--------------------------------------------------------------------------------
+--- LSP Plugins
+--------------------------------------------------------------------------------
+  { -- Lua
+    'folke/lazydev.nvim', 
+    ft = 'lua',
+  },
+--------------------------------------------------------------------------------
+--- Color Theme
+--------------------------------------------------------------------------------
+  {
+    'datsfilipe/vesper.nvim',
+    config = function()
+      vim.cmd.colorscheme 'vesper'
+    end,
   },
 })
 
