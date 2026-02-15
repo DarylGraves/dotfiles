@@ -121,6 +121,8 @@ require('lazy').setup {
   {
     'seblj/roslyn.nvim',
     ft = 'cs',
+    ---@module 'roslyn.config'
+    ---@type RoslynNvimConfig
   },
   { -- Formatting
     'stevearc/conform.nvim',
@@ -371,7 +373,6 @@ require('lazy').setup {
       vim.list_extend(ensure_installed, {
         -- Add Formatters here?
         'stylua',
-        'roslyn',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
