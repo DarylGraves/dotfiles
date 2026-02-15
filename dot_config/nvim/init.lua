@@ -23,7 +23,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 --------------------------------------------------------------------------------
 --- Key Mappings
 --------------------------------------------------------------------------------
-
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
@@ -32,7 +31,6 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 --------------------------------------------------------------------------------
 --- Settings
 --------------------------------------------------------------------------------
-
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.cursorline = true -- Highlights the line you're on
@@ -71,3 +69,28 @@ end
 ---@type vim.Option
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
+
+--------------------------------------------------------------------------------
+--- Plugins
+--------------------------------------------------------------------------------
+require('lazy').setup({
+  'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
+  { -- Adds git related signs to the gutter, as well as utilities for managing changes
+    'lewis6991/gitsigns.nvim',
+    opts = {
+      signs = {
+        add = { text = '+' },
+        change = { text = '~' },
+        delete = { text = '_' },
+        topdelete = { text = '‾' },
+        changedelete = { text = '~' },
+      },
+    },
+  },
+  {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    config = true,
+  },
+})
+
