@@ -73,7 +73,10 @@ rtp:prepend(lazypath)
 --- Plugins
 --------------------------------------------------------------------------------
 require('lazy').setup {
-  'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
+  { -- Detect tabstop and shiftwidth automatically
+    'NMAC427/guess-indent.nvim',
+    opts = {},
+  },
   { -- Comment toggling with Ctrl+/
     'numToStr/Comment.nvim',
     opts = {},
