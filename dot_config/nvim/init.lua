@@ -1,4 +1,4 @@
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 --- Init
 --------------------------------------------------------------------------------
 vim.g.mapleader = ' '
@@ -40,7 +40,7 @@ vim.o.confirm = true -- Prompt for confirmation if closing without saving
 vim.o.ignorecase = true -- Make searches case-insensitive
 vim.o.mouse = 'a' -- Enable the mouse
 vim.o.scrolloff = 10 -- Scroll down when x numbers of lines left
-vim.o.showmode = true -- Shows "INSERT", etc. Plugins may need this set to false
+vim.o.showmode = false -- Shows "INSERT", etc. Mini sets this to false
 vim.o.signcolumn = 'yes' -- Needed for git signs or the column will keep moving
 vim.o.smartcase = true -- If you start using upper case then go case sensitive
 vim.o.undofile = true -- Persist undos across edit sessions by saving to file
