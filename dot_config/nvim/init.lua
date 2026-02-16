@@ -28,6 +28,10 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 
+-- Tab between Buffers
+vim.keymap.set('n', '<Tab>', ':bnext<CR>')
+vim.keymap.set('n', '<S-Tab>', ':bprev<CR>')
+
 --------------------------------------------------------------------------------
 --- Settings
 --------------------------------------------------------------------------------
@@ -56,7 +60,7 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 --------------------------------------------------------------------------------
 --- Lazy Plugin Manager
 --------------------------------------------------------------------------------
-require 'config.lazy'
+require('config.lazy')
 
 --------------------------------------------------------------------------------
 --- Plugins
