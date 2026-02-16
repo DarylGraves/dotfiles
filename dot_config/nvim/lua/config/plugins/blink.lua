@@ -6,7 +6,7 @@ return {
       'L3MON4D3/LuaSnip',
       version = 'v2.*',
       config = function()
-        -- This loads the actual snippet data from friendly-snippets into the engine
+        -- Required to load the actual snippet data (like 'prop' and 'ctor') into the engine
         require('luasnip.loaders.from_vscode').lazy_load()
       end,
     },
@@ -35,9 +35,36 @@ return {
     --
     -- See :h blink-cmp-config-keymap for defining your own keymap
     keymap = {
-      preset = 'default',
-      -- Map Enter to accept so snippets like "prop" can be expanded easily
+      preset = 'none', -- Explicitly defined to ensure VS Code Tab behavior works
+
+      ['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
+      ['<C-e>'] = { 'hide', 'fallback' },
       ['<CR>'] = { 'accept', 'fallback' },
+
+      -- If the completion menu is open, Tab selects the item.
+      -- If a snippet is already expanded, Tab jumps to the next placeholder.
+      ['<Tab>'] = {
+        function()
+          -- FIXED: Require blink here to avoid the 'nil value' error for is_snippet_active
+          local blink = require('blink.cmp')
+          if blink.snippet_active() then
+            return blink.accept()
+          else
+            return blink.select_next()
+          end
+        end,
+        'snippet_forward',
+        'fallback',
+      },
+      ['<S-Tab>'] = { 'snippet_backward', 'select_prev', 'fallback' },
+
+      ['<Up>'] = { 'select_prev', 'fallback' },
+      ['<Down>'] = { 'select_next', 'fallback' },
+      ['<C-p>'] = { 'select_prev', 'fallback' },
+      ['<C-n>'] = { 'select_next', 'fallback' },
+
+      ['<C-b>'] = { 'scroll_documentation_up', 'fallback' },
+      ['<C-f>'] = { 'scroll_documentation_down', 'fallback' },
     },
 
     appearance = {
