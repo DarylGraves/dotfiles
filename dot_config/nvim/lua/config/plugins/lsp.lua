@@ -2,39 +2,46 @@ return {
   {
     'mason-org/mason-lspconfig.nvim',
     dependencies = {
-      {
-        'mason-org/mason.nvim',
-        opts = {
-          registries = {
-            'github:mason-org/mason-registry',
-            'github:Crashdummyy/mason-registry',
-          },
-        },
-      },
+      { 'mason-org/mason.nvim', opts = { registries = { 'github:mason-org/mason-registry', 'github:Crashdummyy/mason-registry' } } },
       'neovim/nvim-lspconfig',
+      'saghen/blink.cmp',
     },
     config = function()
       local lspconfig = require('lspconfig')
+      local capabilities = require('blink.cmp').get_lsp_capabilities()
 
-      -- We put everything inside the main setup call.
-      -- This bypasses the setup_handlers nil error entirely.
+      -- Specialized settings for specific servers
+      local servers = {
+        lua_ls = { settings = { Lua = { completion = { callSnippet = 'Replace' } } } },
+        pyright = {},
+        powershell_es = {},
+      }
+
       require('mason-lspconfig').setup({
-        ensure_installed = { 'lua_ls', 'pyright', 'powershell_es' },
+        ensure_installed = vim.tbl_keys(servers),
         handlers = {
           function(server_name)
-            lspconfig[server_name].setup({})
+            local server = servers[server_name] or {}
+            server.capabilities = capabilities
+            lspconfig[server_name].setup(server)
           end,
         },
       })
 
-      -- Diagnostics UI
       vim.diagnostic.config({
-        virtual_text = {
-          spacing = 4,
-          prefix = '●',
-        },
         severity_sort = true,
-        float = { border = 'rounded' },
+        float = { border = 'rounded', source = 'if_many' },
+        underline = { severity = vim.diagnostic.severity.ERROR },
+        -- Adds the icons back to the gutter
+        signs = {
+          text = {
+            [vim.diagnostic.severity.ERROR] = '󰅚 ',
+            [vim.diagnostic.severity.WARN] = '󰀪 ',
+            [vim.diagnostic.severity.INFO] = '󰋽 ',
+            [vim.diagnostic.severity.HINT] = '󰌶 ',
+          },
+        },
+        virtual_text = { source = 'if_many', spacing = 4, prefix = '●' },
       })
     end,
   },

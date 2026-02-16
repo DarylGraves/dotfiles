@@ -1,6 +1,16 @@
 return {
   'saghen/blink.cmp',
-  dependencies = { 'rafamadriz/friendly-snippets' },
+  dependencies = {
+    'rafamadriz/friendly-snippets',
+    {
+      'L3MON4D3/LuaSnip',
+      version = 'v2.*',
+      config = function()
+        -- This loads the actual snippet data from friendly-snippets into the engine
+        require('luasnip.loaders.from_vscode').lazy_load()
+      end,
+    },
+  },
 
   -- use a release tag to download pre-built binaries
   version = '1.*',
@@ -24,13 +34,20 @@ return {
     -- C-k: Toggle signature help (if signature.enabled = true)
     --
     -- See :h blink-cmp-config-keymap for defining your own keymap
-    keymap = { preset = 'default' },
+    keymap = {
+      preset = 'default',
+      -- Map Enter to accept so snippets like "prop" can be expanded easily
+      ['<CR>'] = { 'accept', 'fallback' },
+    },
 
     appearance = {
       -- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
       -- Adjusts spacing to ensure icons are aligned
       nerd_font_variant = 'mono',
     },
+
+    -- Bridge blink.cmp to the LuaSnip engine to enable snippet expansion
+    snippets = { preset = 'luasnip' },
 
     -- (Default) Only show the documentation popup when manually triggered
     completion = { documentation = { auto_show = false } },
@@ -44,6 +61,7 @@ return {
     -- (Default) Rust fuzzy matcher for typo resistance and significantly better performance
     -- You may use a lua implementation instead by using `implementation = "lua"` or fallback to the lua implementation,
     -- when the Rust fuzzy matcher is not available, by using `implementation = "prefer_rust"`
+    --
     --
     fuzzy = { implementation = 'lua' },
   },
