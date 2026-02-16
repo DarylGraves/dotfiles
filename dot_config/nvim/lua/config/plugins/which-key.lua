@@ -1,6 +1,5 @@
 return {
   'folke/which-key.nvim',
-  enabled = false,
   event = 'VimEnter', -- Sets the loading event to 'VimEnter'
   opts = {
     delay = 0,
