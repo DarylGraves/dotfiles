@@ -2,5 +2,5 @@
 size = 9.5
 normal = { family = "Hack Nerd Font Mono", style = "Regular" }
 
-[terminal]
-shell = "fish"
+[terminal.shell]
+program = "tmux"
