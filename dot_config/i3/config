@@ -195,6 +195,7 @@ bar {
     binding_mode       #b691d3 #A07CBC #FFFFFF
   }
   status_command i3status
+  tray_output DP-0
 }
 
 # -----------------------------------------------------------------------------
@@ -225,7 +226,7 @@ bindsym mod4+7 exec --no-startup-id i3-msg '[class="Steam"] focus' || exec steam
 bindsym mod4+9 exec --no-startup-id i3-msg '[class="Alacritty"] focus' || exec alacritty
 
 # File Explorer
-bindsym mod4+e exec --no-startup-id i3-msg '[class="Thunar"] focus' || exec thunar
+bindsym mod4+e exec thunar
 
 # Lock Screen
 bindsym mod4+l exec i3lock
