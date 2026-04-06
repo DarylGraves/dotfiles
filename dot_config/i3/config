@@ -207,8 +207,11 @@ exec_always setxkbmap -option caps:escape
 # Hide Window titles
 for_window [class="^.*"] border pixel 2
 
-# Rotate second screen
-exec_always xrandr --output DP-5 --rotate left
+# Rotate second screen and put on the left
+exec_always xrandr --output DP-5 --rotate left --left-of DP-0
+
+# Fix Workspace 9 to left
+workspace "9 Sidebar" output DP-5
 
 # App Shortcuts
 bindsym mod4+1 exec --no-startup-id i3-msg '[class="Brave-browser"] focus' || exec brave-browser
