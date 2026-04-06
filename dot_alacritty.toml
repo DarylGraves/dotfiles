@@ -4,3 +4,4 @@ normal = { family = "Hack Nerd Font Mono", style = "Regular" }
 
 [terminal.shell]
 program = "tmux"
+
