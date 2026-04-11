@@ -1,3 +1,9 @@
+# Software Dependancies to install:
+# - Rofi
+# - i3Bars
+# - Nitrogen
+# - Alacritty
+
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -123,6 +129,14 @@ bindsym $mod+Shift+8 move container to workspace number $ws8; workspace number $
 bindsym $mod+Shift+9 move container to workspace number $ws9; workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10; workspace number $ws10
 
+# Resize
+#   Width
+bindsym $mod+u resize shrink width 10 px or 10 ppt
+bindsym $mod+p resize grow width 10 px or 10 ppt
+#   Height
+bindsym $mod+i resize shrink height 10 px or 10 ppt
+bindsym $mod+o resize grow height 10 px or 10 ppt
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -181,7 +195,7 @@ bar {
     urgent_workspace   #EC69A0 #DB3279 #FFFFFF
     binding_mode       #b691d3 #A07CBC #FFFFFF
   }
-  status_command i3status
+  status_command i3blocks -c ~/.config/i3blocks/config
   tray_output DP-0
 }
 
