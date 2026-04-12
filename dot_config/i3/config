@@ -182,7 +182,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # class                 border  bground text    indicator child_border
-client.focused          #83CAFA #51A2DA #FFFFFF #83CAFA   #51A2DA
+client.focused          #9a5538 #e0af68 #1a1b26 #e0af68   #e0af68
 client.focused_inactive #8C8C8C #4C4C4C #FFFFFF #4C4C4C   #8C8C8C
 client.unfocused        #4C4C4C #222222 #888888 #292D2E   #222222
 client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
@@ -201,15 +201,11 @@ bar {
       statusline #a9b1d6
       separator  #444b6a
 
-      #                  BORDER  BACKGR. TEXT
-      # Focused: The workspace you are currently using
-      focused_workspace  #7aa2f7 #7aa2f7 #1a1b26
-      # Inactive: Workspaces that have apps open but aren't focused
+      focused_workspace  #e0af68 #e0af68 #1a1b26
+      active_workspace   #444b6a #444b6a #ffffff
       inactive_workspace #1a1b26 #1a1b26 #787c99
-      # Urgent: Workspaces that need attention (e.g., a DM)
       urgent_workspace   #f7768e #f7768e #ffffff
-      # Binding Mode: When you're in a specific mode (like 'resize')
-      binding_mode       #bb9af7 #bb9af7 #1a1b26
+      binding_mode       #e0af68 #1a1b26 #e0af68
     }
   tray_output DP-0
 }
