@@ -73,10 +73,13 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split h
+#bindsym $mod+b split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+#bindsym $mod+v split v
+
+bindsym $mod+b exec --no-startup-id ~/.config/i3/scripts/layout_text.sh h
+bindsym $mod+v exec --no-startup-id ~/.config/i3/scripts/layout_text.sh v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
