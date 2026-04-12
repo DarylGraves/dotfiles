@@ -38,6 +38,7 @@ vim.keymap.set('n', '<S-Tab>', ':bprev<CR>')
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.cursorline = true -- Highlights the line you're on
+vim.o.termguicolors = true
 
 vim.o.breakindent = true -- When text wraps to the next line, honours the indent
 vim.o.confirm = true -- Prompt for confirmation if closing without saving
@@ -61,4 +62,3 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 --- Lazy Plugin Manager
 --------------------------------------------------------------------------------
 require('config.lazy')
-
