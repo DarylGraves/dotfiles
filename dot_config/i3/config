@@ -193,19 +193,36 @@ client.background       #FFFFFF
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  position top
-  colors {
-    background #000000
-    statusline #FFFFFF
-    separator  #666666
-
-    focused_workspace  #83CAFA #51A2DA #FFFFFF
-    active_workspace   #3C6EB4 #294172 #FFFFFF
-    inactive_workspace #8C8C8C #4C4C4C #888888
-    urgent_workspace   #EC69A0 #DB3279 #FFFFFF
-    binding_mode       #b691d3 #A07CBC #FFFFFF
-  }
   status_command i3blocks -c ~/.config/i3blocks/config
+  position top
+
+  # colors {
+  #   background #000000
+  #   statusline #FFFFFF
+  #   separator  #666666
+  #
+  #   focused_workspace  #83CAFA #51A2DA #FFFFFF
+  #   active_workspace   #3C6EB4 #294172 #FFFFFF
+  #   inactive_workspace #8C8C8C #4C4C4C #888888
+  #   urgent_workspace   #EC69A0 #DB3279 #FFFFFF
+  #   binding_mode       #b691d3 #A07CBC #FFFFFF
+  # }
+
+  colors {
+      background #1a1b26
+      statusline #a9b1d6
+      separator  #444b6a
+
+      #                  BORDER  BACKGR. TEXT
+      # Focused: The workspace you are currently using
+      focused_workspace  #7aa2f7 #7aa2f7 #1a1b26
+      # Inactive: Workspaces that have apps open but aren't focused
+      inactive_workspace #1a1b26 #1a1b26 #787c99
+      # Urgent: Workspaces that need attention (e.g., a DM)
+      urgent_workspace   #f7768e #f7768e #ffffff
+      # Binding Mode: When you're in a specific mode (like 'resize')
+      binding_mode       #bb9af7 #bb9af7 #1a1b26
+    }
   tray_output DP-0
 }
 
