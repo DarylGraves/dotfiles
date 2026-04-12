@@ -219,7 +219,7 @@ client.background       #FFFFFF
 # -----------------------------------------------------------------------------
 
 # Set Caps Lock to Escape
-exec_always setxkbmap -option caps:escape
+exec_always --no-startup-id setxkbmap -option caps:escape
 
 # Hide Window titles
 for_window [class="^.*"] border pixel 4
@@ -245,13 +245,13 @@ bindsym mod4+7 exec --no-startup-id i3-msg '[class="Steam"] focus' || exec steam
 bindsym mod4+9 exec --no-startup-id i3-msg '[class="Alacritty"] focus' || exec alacritty
 
 # File Explorer
-bindsym mod4+e exec thunar
+bindsym mod4+e exec --no-startup-id thunar
 
 # Lock Screen
-bindsym mod4+l exec i3lock
+bindsym mod4+l exec --no-startup-id i3lock
 
 # Rofi
-bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+bindcode $mod+40 exec --no-startup-id "rofi -modi drun,run -show drun"
 
 # Bluetooth Manager
 bindsym mod4+b exec --no-startup-id i3-msg '[class="Bluetooth"] focus' || exec blueman-manager
