@@ -31,14 +31,14 @@ interval=1
 color=#66ff66
 
 [mediaplayer]
-command=~/.config/i3blocks/scripts/mediaplayer.sh
+command=~/.config/i3/scripts/mediaplayer.sh
 instance=playerctl
 interval=5
 signal=10
 color=#f3f4f5
 
 [volume]
-command=~/.config/i3blocks/scripts/volume.sh
+command=~/.config/i3/scripts/volume.sh
 label=VOL 
-interval=once
+interval=5
 signal=10
