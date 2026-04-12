@@ -29,3 +29,16 @@ interval=1
 command=~/.config/i3/scripts/layout_text.sh
 interval=1
 color=#66ff66
+
+[mediaplayer]
+command=~/.config/i3blocks/scripts/mediaplayer.sh
+instance=playerctl
+interval=5
+signal=10
+color=#f3f4f5
+
+[volume]
+command=~/.config/i3blocks/scripts/volume.sh
+label=VOL 
+interval=once
+signal=10
