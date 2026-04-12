@@ -196,18 +196,6 @@ bar {
   status_command i3blocks -c ~/.config/i3blocks/config
   position top
 
-  # colors {
-  #   background #000000
-  #   statusline #FFFFFF
-  #   separator  #666666
-  #
-  #   focused_workspace  #83CAFA #51A2DA #FFFFFF
-  #   active_workspace   #3C6EB4 #294172 #FFFFFF
-  #   inactive_workspace #8C8C8C #4C4C4C #888888
-  #   urgent_workspace   #EC69A0 #DB3279 #FFFFFF
-  #   binding_mode       #b691d3 #A07CBC #FFFFFF
-  # }
-
   colors {
       background #1a1b26
       statusline #a9b1d6
