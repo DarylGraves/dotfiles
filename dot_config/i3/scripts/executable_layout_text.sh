@@ -1,10 +1,14 @@
-#!/bin/bash
-layout=$(i3-msg -t get_tree | jq -r '.. | select(.focused? == true).layout')
+#!/usr/bin/env bash
 
-if [ "$layout" == "splith" ]; then
-    echo "Horizontal ↔"
-elif [ "$layout" == "splitv" ]; then
-    echo "Vertical ↕"
+MODE="$1"
+
+if [ "$MODE" = "h" ]; then
+    i3-msg split h > /dev/null
+    echo "H" > /tmp/i3_split_mode
 else
-    echo "$layout"
+    i3-msg split v > /dev/null
+    echo "V" > /tmp/i3_split_mode
 fi
+
+# Trigger i3blocks update instantly
+pkill -RTMIN+10 i3blocks
