@@ -3,6 +3,7 @@
 # - i3Bars
 # - Nitrogen
 # - Alacritty
+# - playerctl
 
 set $mod Mod1
 
