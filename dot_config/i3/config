@@ -240,6 +240,7 @@ bindsym mod4+3 exec --no-startup-id i3-msg '[class="remmina"] focus' || exec rem
 bindsym mod4+4 exec --no-startup-id i3-msg '[class="Beeper"] focus' || exec ~/Applications/Beeper.AppImage
 # TODO: Unassigned
 # TODO: Code
+bindsym mod4+6 exec --no-startup-id i3-msg '[class='Code'] focus' || exec code
 bindsym mod4+7 exec --no-startup-id i3-msg '[class="Steam"] focus' || exec steam
 # TODO: Obsidian
 bindsym mod4+9 exec --no-startup-id i3-msg '[class="Alacritty"] focus' || exec alacritty
