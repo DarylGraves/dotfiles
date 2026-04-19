@@ -12,6 +12,11 @@ if (!(Test-Path -Path $BaseRegistryPath)) {
 	New-Item -Path $BaseRegistryPath -Force | Out-Null
 }
 
+# Create Symlink for Nvim to work in Windows
+if (-not (Test-Path "$HOME\AppData\Local\nvim")) { 
+	New-Item -ItemType Junction -Path "$HOME\AppData\Local\nvim" -Target "$HOME\.config\nvim"
+}
+
 #################################################
 # New Machine - Install Software if personal
 #################################################
