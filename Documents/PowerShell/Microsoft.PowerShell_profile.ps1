@@ -113,19 +113,19 @@ Set-Alias -Name "adp" -Value "Get-AdPrincipalGroupMembership"
 # Functions
 #################################################
 function vim {
-	& "C:\Program Files\Vim\vim91\vim.exe" $args && echo "`e[5 q"
+	& "C:\Program Files\Vim\vim91\vim.exe" $args && Write-Output "`e[5 q"
 }
 
 function vi {
-	& "C:\Program Files\Vim\vim91\vim.exe" $args && echo "`e[5 q"
+	& "C:\Program Files\Vim\vim91\vim.exe" $args && Write-Output "`e[5 q"
 }
 
 function nvim {
-	& "C:\Program Files\Neovim\bin\nvim.exe" $args
+	& "C:\Program Files\Neovim\bin\nvim.exe" $args && Write-Output "`e[5 q"
 }
 
 function hosts {
-	notepad "C:\Windows\System32\drivers\etc\hosts"
+	nvim "C:\Windows\System32\drivers\etc\hosts"
 }
 
 #################################################
