@@ -1,6 +1,6 @@
 {{- if eq .chezmoi.os "windows" }}
-!.config/FirstTimeSetup/**
-!.config/oh-my-posh/**
+.config/FirstTimeSetup/**
+.config/oh-my-posh/**
 {{- end }}
 
 {{- if eq .chezmoi.os "linux" }}
