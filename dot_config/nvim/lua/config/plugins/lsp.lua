@@ -16,6 +16,7 @@ return {
         pyright = {},
         powershell_es = {},
         terraformls = {},
+        tflint = {},
       }
 
       require('mason-lspconfig').setup({
