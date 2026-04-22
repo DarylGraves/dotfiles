@@ -4,7 +4,26 @@ return {
     dependencies = {
       { 'mason-org/mason.nvim', opts = { registries = { 'github:mason-org/mason-registry', 'github:Crashdummyy/mason-registry' } } },
       'neovim/nvim-lspconfig',
-      'saghen/blink.cmp',
+      {
+        'saghen/blink.cmp',
+        opts = {
+            keymap = {
+              -- Use 'preset = 'default'' or 'super-tab'
+              -- We manually override Tab to select and accept
+              ['<C-space>'] = { 'show', 'show_documentation', 'hide' },
+              ['<Tab>'] = { 'select_and_accept', 'fallback' },
+            },
+            completion = {
+              list = {
+                selection = {
+                  -- This ensures the first item is automatically highlighted
+                  preselect = true,
+                  auto_insert = true,
+                },
+              },
+            },
+          },
+      }
     },
     config = function()
       local lspconfig = require('lspconfig')
