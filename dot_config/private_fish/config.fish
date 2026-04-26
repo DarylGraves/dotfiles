@@ -2,7 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 	fastfetch
 	oh-my-posh init fish --config ~/.config/oh-my-posh/di4am0nd.omp.json | source
-	fish_add_path ~/Applications
 	set -gx EDITOR nvim
 	set -gx VISUAL nvim
 end
