@@ -233,6 +233,9 @@ exec_always xrandr --output DP-5 --rotate left --left-of DP-0
 # Fix Workspace 9 to left
 workspace "9 Sidebar" output DP-5
 
+# Re-apply wallpaper
+exec_always nitrogen --restore
+
 # App Shortcuts
 bindsym mod4+1 exec --no-startup-id i3-msg '[class="Brave-browser"] focus' || exec brave-browser
 # TODO: Email
