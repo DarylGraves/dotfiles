@@ -1,0 +1,4 @@
+force_session_upload = "true"
+delay_inotify_processing = "true"
+inotify_delay = "15"
+disable_notifications = "true"
