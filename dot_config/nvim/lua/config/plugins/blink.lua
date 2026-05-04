@@ -6,91 +6,47 @@ return {
       'L3MON4D3/LuaSnip',
       version = 'v2.*',
       config = function()
-        -- Required to load the actual snippet data (like 'prop' and 'ctor') into the engine
         require('luasnip.loaders.from_vscode').lazy_load()
       end,
     },
   },
 
-  -- use a release tag to download pre-built binaries
   version = '1.*',
-  -- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
-  -- build = 'cargo build --release',
-  -- If you use nix, you can build from source using latest nightly rust with:
-  -- build = 'nix run .#build-plugin',
 
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
-    -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
-    -- 'super-tab' for mappings similar to vscode (tab to accept)
-    -- 'enter' for enter to accept
-    -- 'none' for no mappings
-    --
-    -- All presets have the following mappings:
-    -- C-space: Open menu or open docs if already open
-    -- C-n/C-p or Up/Down: Select next/previous item
-    -- C-e: Hide menu
-    -- C-k: Toggle signature help (if signature.enabled = true)
-    --
-    -- See :h blink-cmp-config-keymap for defining your own keymap
-    keymap = {
-      preset = 'none', -- Explicitly defined to ensure VS Code Tab behavior works
-
-      ['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
-      ['<C-e>'] = { 'hide', 'fallback' },
+    -- Simplified keymap using the built-in super-tab preset
+    keymap = { 
+      preset = 'super-tab',
+      -- You can still override specific keys if you like <CR> for accept
       ['<CR>'] = { 'accept', 'fallback' },
-
-      -- If the completion menu is open, Tab selects the item.
-      -- If a snippet is already expanded, Tab jumps to the next placeholder.
-      ['<Tab>'] = {
-        function()
-          -- FIXED: Require blink here to avoid the 'nil value' error for is_snippet_active
-          local blink = require('blink.cmp')
-          if blink.snippet_active() then
-            return blink.accept()
-          else
-            return blink.select_next()
-          end
-        end,
-        'snippet_forward',
-        'fallback',
-      },
-      ['<S-Tab>'] = { 'snippet_backward', 'select_prev', 'fallback' },
-
-      ['<Up>'] = { 'select_prev', 'fallback' },
-      ['<Down>'] = { 'select_next', 'fallback' },
-      ['<C-p>'] = { 'select_prev', 'fallback' },
-      ['<C-n>'] = { 'select_next', 'fallback' },
-
-      ['<C-b>'] = { 'scroll_documentation_up', 'fallback' },
-      ['<C-f>'] = { 'scroll_documentation_down', 'fallback' },
     },
 
     appearance = {
-      -- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
-      -- Adjusts spacing to ensure icons are aligned
       nerd_font_variant = 'mono',
+      -- Keeps compatibility with nvim-cmp highlight groups
+      use_nvim_cmp_as_default = true,
     },
 
-    -- Bridge blink.cmp to the LuaSnip engine to enable snippet expansion
     snippets = { preset = 'luasnip' },
 
-    -- (Default) Only show the documentation popup when manually triggered
-    completion = { documentation = { auto_show = false } },
-
-    -- Default list of enabled providers defined so that you can extend it
-    -- elsewhere in your config, without redefining it, due to `opts_extend`
-    sources = {
-      default = { 'lsp', 'path', 'snippets', 'buffer' },
+    completion = { 
+      documentation = { auto_show = false },
+      -- If multiple providers return the same item, this helps keep the list clean
+      list = { selection = { preselect = true, auto_insert = true } },
     },
 
-    -- (Default) Rust fuzzy matcher for typo resistance and significantly better performance
-    -- You may use a lua implementation instead by using `implementation = "lua"` or fallback to the lua implementation,
-    -- when the Rust fuzzy matcher is not available, by using `implementation = "prefer_rust"`
-    --
-    --
-    fuzzy = { implementation = 'lua' },
+    sources = {
+      default = { 'lsp', 'path', 'snippets', 'buffer' },
+      -- Logic to omit conflicting providers if necessary
+      providers = {
+        snippets = { score_offset = 100 },
+      },
+    },
+
+    -- Changed to 'prefer_rust' as per your reference for better performance
+    fuzzy = { implementation = 'prefer_rust' },
   },
   opts_extend = { 'sources.default' },
 }
