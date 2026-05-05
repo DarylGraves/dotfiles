@@ -13,7 +13,7 @@ return {
         function()
           local nt = require("neo-tree.command")
           if vim.bo.filetype == "neo-tree" then
-            nt.execute({ action = "close" })
+            nt.execute({ action = "close"})
           else
             nt.execute({ action = "focus", source = "filesystem", position = "right" })
           end
@@ -24,6 +24,9 @@ return {
     opts = {
       window = {
         position = 'right',
+        mappings = {
+          ["<C-n>"] = "add",
+        }
       },
     },
   },
