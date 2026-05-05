@@ -31,5 +31,13 @@ return {
         }
       },
     },
+    config = function(_, opts)
+      -- Apply the highlights here
+      vim.api.nvim_set_hl(0, "NormalFloat", { fg = "#ffffff", bg = "NONE" }) 
+      vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#ffffff" }) -- A nice green border
+      
+      -- Call the standard setup with your opts
+      require("neo-tree").setup(opts)
+    end,
   },
 }
