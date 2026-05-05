@@ -26,6 +26,8 @@ return {
         position = 'right',
         mappings = {
           ["<C-n>"] = "add",
+          ["<C-f>"] = "add_directory",
+          ["<Del>"] = "delete",
         }
       },
     },
