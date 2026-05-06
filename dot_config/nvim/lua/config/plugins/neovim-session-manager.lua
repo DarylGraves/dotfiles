@@ -1,7 +1,11 @@
 return {
   'Shatur/neovim-session-manager',
-  opts = {
-    autoload_mode = { config.AutoLoadMode.CurrentDir },
-    autosave_last_session = true
-  }
+  opts = {},
+  config = function()
+    local config = require('session_manager.config')
+    require('session_manager').setup({
+      autoload_mode = config.AutoloadMode.CurrentDir,
+      autosave_last_session = true,
+    })
+    end,
 }
