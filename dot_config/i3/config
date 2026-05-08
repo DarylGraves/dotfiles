@@ -226,6 +226,8 @@ for_window [class="^.*"] border pixel 4
 
 # Monitor Layout: [HDMI-1] [DP-5 (Left)] [DP-0 (Primary)]
 exec_always --no-startup-id xrandr --output HDMI-1 --mode 1920x1200 --pos 0x0 --rotate normal --output DP-5 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-0 --primary --mode 3440x1440 --pos 3000x0
+# Map Touchscreen to the HDMI monitor
+exec_always --no-startup-id xinput map-to-output "wch.cn TouchScreen" HDMI-1
 
 # Fix Workspace 9 to left
 workspace "9 Sidebar" output DP-5
