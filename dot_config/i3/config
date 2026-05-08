@@ -224,11 +224,8 @@ exec_always --no-startup-id setxkbmap -option caps:escape
 # Hide Window titles
 for_window [class="^.*"] border pixel 4
 
-# Set primary monitor
-exec_always xrandr --output DP-0 --primary
-
-# Rotate second screen and put on the left
-exec_always xrandr --output DP-5 --rotate left --left-of DP-0
+# Monitor Layout: [HDMI-1] [DP-5 (Left)] [DP-0 (Primary)]
+exec_always --no-startup-id xrandr --output HDMI-1 --mode 1920x1200 --pos 0x0 --rotate normal --output DP-5 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-0 --primary --mode 3440x1440 --pos 3000x0
 
 # Fix Workspace 9 to left
 workspace "9 Sidebar" output DP-5
