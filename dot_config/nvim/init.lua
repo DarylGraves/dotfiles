@@ -28,6 +28,9 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 
+-- Ctrl-Z seems to minimise nvim and go back to the terminal so disabling
+vim.keymap.set({'n', 'v', 'i'}, '<C-z>', '<Nop>')
+
 -- Tab between buffers
 vim.keymap.set('n', '<Tab>', ':bnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':bprev<CR>')
