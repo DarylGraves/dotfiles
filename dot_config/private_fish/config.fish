@@ -11,3 +11,7 @@ if status is-interactive
 	end
 end
 
+function fish_user_key_bindings
+    # This disables Ctrl+Z which I keep pushing in Nvim as an undo
+    bind \cz 'commandline -f repaint'
+end
