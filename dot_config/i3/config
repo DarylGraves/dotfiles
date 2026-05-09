@@ -238,6 +238,9 @@ exec_always --no-startup-id xinput map-to-output "wch.cn TouchScreen" HDMI-1
 workspace "8 Small Monitor" output HDMI-1
 workspace "9 Sidebar" output DP-5
 
+# Make touchscreen work on smal lmonitor
+exec_always --no-startup-id xinput map-to-output 11 HDMI-1
+
 # Re-apply wallpaper
 exec_always nitrogen --restore
 
