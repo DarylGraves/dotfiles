@@ -235,6 +235,7 @@ exec_always --no-startup-id xrandr --output DP-0 --primary
 exec_always --no-startup-id xinput map-to-output "wch.cn TouchScreen" HDMI-1
 
 # Fix Workspace 9 to left
+workspace "8 Small Monitor" output HDMI-1
 workspace "9 Sidebar" output DP-5
 
 # Re-apply wallpaper
