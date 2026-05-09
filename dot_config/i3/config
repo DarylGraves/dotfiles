@@ -115,7 +115,7 @@ set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8"
+set $ws8 "8 Small Monitor"
 set $ws9 "9 Sidebar"
 set $ws10 "10"
 
@@ -234,7 +234,7 @@ exec_always --no-startup-id xrandr --output DP-0 --primary
 # Map Touchscreen to the HDMI monitor
 exec_always --no-startup-id xinput map-to-output "wch.cn TouchScreen" HDMI-1
 
-# Fix Workspace 9 to left
+# Fix Workspace 8 to small monitor and 9 to left
 workspace "8 Small Monitor" output HDMI-1
 workspace "9 Sidebar" output DP-5
 
