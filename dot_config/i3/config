@@ -268,3 +268,4 @@ bindsym mod4+b exec --no-startup-id i3-msg '[class="Bluetooth"] focus' || exec b
 # Start a Terminal
 bindsym $mod+Return exec alacritty
 
+bindsym Mod1+Shift+s exec --no-startup-id flameshot gui
