@@ -232,14 +232,11 @@ exec_always --no-startup-id xrandr --output HDMI-1 --mode 1920x1200 --pos 0x0 --
 exec_always --no-startup-id xrandr --output DP-0 --primary
 
 # Map Touchscreen to the HDMI monitor
-exec_always --no-startup-id xinput map-to-output "wch.cn TouchScreen" HDMI-1
+exec_always --no-startup-id sh -c "xinput list | grep 'wch.cn TouchScreen' | grep -o 'id=[0-9]\+' | grep -o '[0-9]\+' | xargs -I {} xinput map-to-output {} HDMI-1"
 
 # Fix Workspace 8 to small monitor and 9 to left
 workspace "8 Small Monitor" output HDMI-1
 workspace "9 Sidebar" output DP-5
-
-# Make touchscreen work on smal lmonitor
-exec_always --no-startup-id xinput map-to-output 11 HDMI-1
 
 # Re-apply wallpaper
 exec_always nitrogen --restore
