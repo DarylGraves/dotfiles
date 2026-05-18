@@ -231,8 +231,8 @@ if xrandr | grep -q "DP-0 connected"; then \
            --output DP-5 --mode 1920x1080 --pos 1920x0 --rotate left \
            --output DP-0 --mode 3440x1440 --pos 3000x0 --primary; \
 elif xrandr | grep -q "eDP-1 connected"; then \
-    xrandr --output HDMI-1 --mode 1920x1200 --pos 0x0 --rotate normal --primary \
-           --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal; \
+    xrandr --output HDMI-1 --mode 1920x1200 --pos 0x0 --rotate normal \
+           --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal --primary; \
 fi'
 
 # Map Touchscreen to the Desktop's Mini monitor
