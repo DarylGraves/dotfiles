@@ -224,14 +224,18 @@ exec_always --no-startup-id setxkbmap -option caps:escape
 # Hide Window titles
 for_window [class="^.*"] border pixel 4
 
-# Monitor Layout: [HDMI-1] [DP-5 (Left)] [DP-0] 
-# Set layout first
-exec_always --no-startup-id xrandr --output HDMI-1 --mode 1920x1200 --pos 0x0 --rotate normal --output DP-5 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-0 --mode 3440x1440 --pos 3000x0
+# Dynamic Monitor Layout Detection with Primary Monitor Assignment
+exec_always --no-startup-id sh -c '\
+if xrandr | grep -q "DP-0 connected"; then \
+    xrandr --output HDMI-1 --mode 1920x1200 --pos 0x0 --rotate normal \
+           --output DP-5 --mode 1920x1080 --pos 1920x0 --rotate left \
+           --output DP-0 --mode 3440x1440 --pos 3000x0 --primary; \
+elif xrandr | grep -q "eDP-1 connected"; then \
+    xrandr --output HDMI-1 --mode 1920x1200 --pos 0x0 --rotate normal --primary \
+           --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal; \
+fi'
 
-# Force primary assignment
-exec_always --no-startup-id xrandr --output DP-0 --primary
-
-# Map Touchscreen to the HDMI monitor
+# Map Touchscreen to the Desktop's Mini monitor
 exec_always --no-startup-id sh -c "xinput list | grep 'wch.cn TouchScreen' | grep -o 'id=[0-9]\+' | grep -o '[0-9]\+' | xargs -I {} xinput map-to-output {} HDMI-1"
 
 exec_always --no-startup-id ~/.config/i3/scripts/touch-snapback.sh
