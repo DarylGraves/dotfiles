@@ -2,6 +2,9 @@
 size = 9.5
 normal = { family = "Hack Nerd Font Mono", style = "Regular" }
 
+[colors.primary]
+background = "#000000"
+
 [terminal.shell]
 program = "tmux"
 
