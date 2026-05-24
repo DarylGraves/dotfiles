@@ -109,15 +109,22 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1 General"
-set $ws2 "2 Comms"
-set $ws3 "3 Work"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
+set $ws2 "2 General"
+set $ws3 "3 Remote Desktop"
+set $ws4 "4 Comms"
+set $ws5 "5 Programming"
+set $ws6 "6 Programming"
+set $ws7 "7 Games"
 set $ws8 "8 Small Monitor"
-set $ws9 "9 Sidebar"
+set $ws9 "9 Side Monitor"
 set $ws10 "10"
+
+# Assigning Apps to specific workspaces
+assign [class="Brave"] $ws1
+assign [class="Remmina"] $ws3
+assign [class="Beeper"] $ws4
+assign [class="Code"] $ws5
+assign [class="Steam"] $ws7
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -253,7 +260,6 @@ bindsym mod4+1 exec --no-startup-id i3-msg '[class="Brave-browser"] focus' || ex
 bindsym mod4+3 exec --no-startup-id i3-msg '[class="remmina"] focus' || exec remmina
 bindsym mod4+4 exec --no-startup-id i3-msg '[class="Beeper"] focus' || exec ~/Applications/Beeper.AppImage
 # TODO: Unassigned
-# TODO: Code
 bindsym mod4+6 exec --no-startup-id i3-msg '[class='Code'] focus' || exec code
 bindsym mod4+7 exec --no-startup-id i3-msg '[class="Steam"] focus' || exec steam
 bindsym mod4+8 exec --no-startup-id i3-msg '[class="Obsidian"] focus' || exec ~/Applications/Obsidian-1.12.7.AppImage
