@@ -3,21 +3,34 @@
 #  🍅 Pomodoro Timer
 #  Usage: ./pomodoro.sh [work_mins] [short_break] [long_break] [sessions_before_long]
 #  Defaults: 25 / 5 / 15 / 4
+#  Press Space or p to pause/resume during a countdown
 # ─────────────────────────────────────────────
 
-# Strip any non-digit characters (commas, spaces, etc.) and fall back to defaults
-WORK_MINS=$(( ${1//[^0-9]/} > 0 ? ${1//[^0-9]/} : 25 ))
-SHORT_BREAK=$(( ${2//[^0-9]/} > 0 ? ${2//[^0-9]/} : 5 ))
-LONG_BREAK=$(( ${3//[^0-9]/} > 0 ? ${3//[^0-9]/} : 15 ))
-LONG_EVERY=$(( ${4//[^0-9]/} > 0 ? ${4//[^0-9]/} : 4 ))
+# Safe integer parse: strip non-digits, return default if empty/zero
+parse_int() {
+  local raw="${1//[^0-9]/}"
+  local default="$2"
+  if [[ -n "$raw" && "$raw" -gt 0 ]]; then
+    echo "$raw"
+  else
+    echo "$default"
+  fi
+}
+
+WORK_MINS=$(parse_int "${1}" 25)
+SHORT_BREAK=$(parse_int "${2}" 5)
+LONG_BREAK=$(parse_int "${3}" 15)
+LONG_EVERY=$(parse_int "${4}" 4)
 
 session=0
+paused=0
 
 # ── Colors ──────────────────────────────────
 RED='\033[0;31m'
 GRN='\033[0;32m'
 YLW='\033[0;33m'
 BLU='\033[0;34m'
+DIM='\033[2m'
 BLD='\033[1m'
 RST='\033[0m'
 
@@ -31,32 +44,72 @@ notify() {
   fi
 }
 
-# ── Bell ────────────────────────────────────
 bell() { printf '\a'; }
 
-# ── Countdown display ────────────────────────
+# ── Countdown with pause support ─────────────
 countdown() {
   local total_secs=$(( $1 * 60 ))
   local label="$2"
   local color="$3"
-  local end=$(( SECONDS + total_secs ))
+  local remaining=$total_secs
+  paused=0
 
-  while (( SECONDS < end )); do
-    local remaining=$(( end - SECONDS ))
+  # Read keypresses without blocking the countdown
+  # We use a background read loop writing to a tmp file
+  local keyfile
+  keyfile=$(mktemp)
+
+  # Put terminal in raw mode so Space is caught instantly
+  local old_stty
+  old_stty=$(stty -g)
+  stty -echo -icanon min 0 time 0
+
+  # Cleanup on exit
+  local cleanup="stty '$old_stty'; rm -f '$keyfile'"
+  trap "$cleanup" RETURN
+
+  while (( remaining > 0 )); do
+    # Check for keypress
+    local key
+    key=$(dd bs=1 count=1 2>/dev/null < /dev/tty)
+    if [[ "$key" == " " || "$key" == "p" || "$key" == "P" ]]; then
+      paused=$(( 1 - paused ))
+    fi
+
+    if (( paused )); then
+      local mins=$(( remaining / 60 ))
+      local secs=$(( remaining % 60 ))
+      local elapsed=$(( total_secs - remaining ))
+      local pct=$(( elapsed * 20 / total_secs ))
+      local bar=""
+      for (( i=0; i<20; i++ )); do
+        (( i < pct )) && bar+="█" || bar+="░"
+      done
+      printf "\r  ${YLW}${BLD}%-14s${RST}  ${DIM}[%s]${RST}  %02d:%02d  ${YLW}⏸ PAUSED${RST}  " \
+        "$label" "$bar" "$mins" "$secs"
+      sleep 0.2
+      continue
+    fi
+
     local mins=$(( remaining / 60 ))
     local secs=$(( remaining % 60 ))
     local elapsed=$(( total_secs - remaining ))
-    local pct=$(( elapsed * 20 / total_secs ))   # out of 20 chars
+    local pct=$(( elapsed * 20 / total_secs ))
     local bar=""
     for (( i=0; i<20; i++ )); do
       (( i < pct )) && bar+="█" || bar+="░"
     done
 
-    printf "\r  ${color}${BLD}%-14s${RST}  ${color}[%s]${RST}  %02d:%02d  " \
+    printf "\r  ${color}${BLD}%-14s${RST}  ${color}[%s]${RST}  %02d:%02d  ${DIM}[p] pause${RST}   " \
       "$label" "$bar" "$mins" "$secs"
+
     sleep 1
+    (( remaining-- ))
   done
-  printf "\r%-60s\r" ""   # clear line
+
+  stty "$old_stty"
+  rm -f "$keyfile"
+  printf "\r%-70s\r" ""   # clear line
 }
 
 # ── Header ───────────────────────────────────
