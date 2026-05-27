@@ -35,6 +35,9 @@ vim.keymap.set({'n', 'v', 'i'}, '<C-z>', '<Nop>')
 vim.keymap.set('n', '<Tab>', ':bnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':bprev<CR>')
 
+-- Quick Fix with Ctrl+. like VsCode and Visual Studio
+-- vim.keymap.set({ 'n', 'v' }, '<A-.>', vim.lsp.buf.code_action, { desc = 'LSP code action' })
+-- vim.keymap.set({ 'n', 'v' }, '<C-.>', vim.lsp.buf.code_action, { desc = 'LSP code action (Quick Fix)' })
 --------------------------------------------------------------------------------
 --- Settings
 --------------------------------------------------------------------------------
