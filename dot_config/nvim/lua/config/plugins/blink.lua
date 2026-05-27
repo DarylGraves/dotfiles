@@ -41,7 +41,9 @@ return {
       default = { 'lsp', 'path', 'snippets', 'buffer' },
       -- Logic to omit conflicting providers if necessary
       providers = {
-        snippets = { score_offset = -2 },
+        snippets = {
+          score_offset = 3,
+        },
       },
     },
 
