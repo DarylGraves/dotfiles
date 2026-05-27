@@ -35,9 +35,6 @@ vim.keymap.set({'n', 'v', 'i'}, '<C-z>', '<Nop>')
 vim.keymap.set('n', '<Tab>', ':bnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':bprev<CR>')
 
--- Quick Fix with Ctrl+. like VsCode and Visual Studio
--- vim.keymap.set({ 'n', 'v' }, '<A-.>', vim.lsp.buf.code_action, { desc = 'LSP code action' })
--- vim.keymap.set({ 'n', 'v' }, '<C-.>', vim.lsp.buf.code_action, { desc = 'LSP code action (Quick Fix)' })
 --------------------------------------------------------------------------------
 --- Settings
 --------------------------------------------------------------------------------
@@ -68,3 +65,9 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 --- Lazy Plugin Manager
 --------------------------------------------------------------------------------
 require('config.lazy')
+
+--------------------------------------------------------------------------------
+--- Final Steps
+--------------------------------------------------------------------------------
+vim.cmd('set showtabline=0') -- Hides buffers, we use telescope
+
