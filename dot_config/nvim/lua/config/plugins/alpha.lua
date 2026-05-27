@@ -24,6 +24,5 @@
             button.opts.hl_shortcut = "AlphaShortcut"
           end
 
-          require("alpha").setup(dashboard.config)
     end,
   }
