@@ -2,36 +2,17 @@ return {
   {
     'mason-org/mason-lspconfig.nvim',
     dependencies = {
+      'folke/lazydev.nvim', -- 1. Enforce loading order first
       { 'mason-org/mason.nvim', opts = { registries = { 'github:mason-org/mason-registry', 'github:Crashdummyy/mason-registry' } } },
       'neovim/nvim-lspconfig',
-      {
-        'saghen/blink.cmp',
-        opts = {
-            keymap = {
-              -- Use 'preset = 'default'' or 'super-tab'
-              -- We manually override Tab to select and accept
-              ['<C-space>'] = { 'show', 'show_documentation', 'hide' },
-              ['<Tab>'] = { 'select_and_accept', 'fallback' },
-            },
-            completion = {
-              list = {
-                selection = {
-                  -- This ensures the first item is automatically highlighted
-                  preselect = true,
-                  auto_insert = true,
-                },
-              },
-            },
-          },
-      }
+      'saghen/blink.cmp',    -- 2. Keep this simple string reference
     },
     config = function()
       local lspconfig = require('lspconfig')
       local capabilities = require('blink.cmp').get_lsp_capabilities()
 
-      -- Specialized settings for specific servers
       local servers = {
-        lua_ls = { settings = { Lua = { completion = { callSnippet = 'Replace' } } } },
+        lua_ls = { settings = { Lua = {} } }, -- Clear to let lazydev work
         pyright = {},
         powershell_es = {},
         terraformls = {},
@@ -53,7 +34,6 @@ return {
         severity_sort = true,
         float = { border = 'rounded', source = 'if_many' },
         underline = { severity = vim.diagnostic.severity.ERROR },
-        -- Adds the icons back to the gutter
         signs = {
           text = {
             [vim.diagnostic.severity.ERROR] = '󰅚 ',

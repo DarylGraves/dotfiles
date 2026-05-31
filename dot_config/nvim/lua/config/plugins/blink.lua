@@ -16,38 +16,29 @@ return {
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
-    -- Simplified keymap using the built-in super-tab preset
     keymap = { 
-      preset = 'super-tab',
-      -- You can still override specific keys if you like <CR> for accept
+      -- Merged overrides from your old LSP file configuration:
       ['<CR>'] = { 'accept', 'fallback' },
+      ['<C-space>'] = { 'show', 'show_documentation', 'hide' },
+      ['<Tab>'] = { 'select_and_accept', 'fallback' },
     },
 
     appearance = {
       nerd_font_variant = 'mono',
-      -- Keeps compatibility with nvim-cmp highlight groups
       use_nvim_cmp_as_default = true,
     },
 
     snippets = { preset = 'luasnip' },
 
     completion = { 
-      documentation = { auto_show = false },
-      -- If multiple providers return the same item, this helps keep the list clean
+      documentation = { auto_show = true },
       list = { selection = { preselect = true, auto_insert = true } },
     },
 
     sources = {
       default = { 'lsp', 'path', 'snippets', 'buffer' },
-      -- Logic to omit conflicting providers if necessary
-      providers = {
-        snippets = {
-          score_offset = 3,
-        },
-      },
     },
 
-    -- Changed to 'prefer_rust' as per your reference for better performance
     fuzzy = { implementation = 'prefer_rust' },
   },
   opts_extend = { 'sources.default' },

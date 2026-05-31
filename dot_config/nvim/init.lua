@@ -69,5 +69,4 @@ require('config.lazy')
 --------------------------------------------------------------------------------
 --- Final Steps
 --------------------------------------------------------------------------------
-vim.cmd('set showtabline=0') -- Hides buffers, we use telescope
-
+vim.cmd('set showtabline=0') -- Hide buffers names as we use telescope
