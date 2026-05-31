@@ -1,6 +1,7 @@
 return {
   {
     'folke/todo-comments.nvim',
+    dependancies = { "folke/trouble.nvim" },
     opts = {
 	  signs = true, -- show icons in the signs column
 	  sign_priority = 8, -- sign priority

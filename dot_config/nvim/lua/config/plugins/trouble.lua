@@ -8,6 +8,11 @@ return {
           ["<cr>"] = "jump_close",
         },
       },
+      todo = {
+        keys = {
+          ["<cr>"] = "jump_close",
+        },
+      },
     },
   },
   keys = {
@@ -20,6 +25,11 @@ return {
       "<leader>X",
       "<cmd>Trouble diagnostics toggle focus=true filter.buf=0<cr>",
       desc = "Buffer Diagnostics (Trouble)",
+    },
+    {
+      "<leader>n",
+      "<cmd>Trouble todo toggle focus=true<cr>",
+      desc = "Todo Comments Pane (Trouble)",
     },
   },
 }
