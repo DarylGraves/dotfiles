@@ -61,6 +61,8 @@ vim.o.splitright = true
 vim.o.list = true -- List invisible characters like spaces at the end of a line
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+vim.o.tabstop = 4
+
 --------------------------------------------------------------------------------
 --- Lazy Plugin Manager
 --------------------------------------------------------------------------------

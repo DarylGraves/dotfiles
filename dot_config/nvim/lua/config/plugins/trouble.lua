@@ -12,6 +12,7 @@ return {
         keys = {
           ["<cr>"] = "jump_close",
         },
+        sort = { "text", "pos" },
       },
     },
   },
