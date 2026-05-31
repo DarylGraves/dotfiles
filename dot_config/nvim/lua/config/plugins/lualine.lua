@@ -11,6 +11,13 @@ local diagnostics = {
 	end,
 }
 
+local file = {
+    function()
+        return vim.fn.fnamemodify(vim.api.nvim_buf_get_name(0), ":.")
+    end,
+    icons_enabled = true,
+}
+
 local diff = {
 	"diff",
 	colored = true,
@@ -60,7 +67,7 @@ return {
             lualine_a = { branch },
             lualine_b = { mode },
             lualine_c = { diagnostics },
-            lualine_x = { diff, "fileformat", "filetype" },
+            lualine_x = { file, diff, "fileformat", "filetype" },
             lualine_y = { "location" },
             lualine_z = { progress },
             },

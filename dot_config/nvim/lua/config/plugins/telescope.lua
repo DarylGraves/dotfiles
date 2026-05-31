@@ -11,7 +11,10 @@ return {
       -- 1. Ctrl+P: Find Files (local project files)
       vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Telescope find files' })
 
-      -- 2. Ctrl+S: Find Files in Neovim config
+      -- 2. Ctrl+G: Find strings via grep
+      vim.keymap.set('n', '<C-g>', builtin.live_grep, { desc = 'Telescope find strings' })
+
+      -- 3. Ctrl+S: Find Files in Neovim config
       vim.keymap.set('n', '<C-s>', function()
         builtin.find_files({
           cwd = vim.fn.stdpath('config'), -- Automatically finds your ~/.config/nvim

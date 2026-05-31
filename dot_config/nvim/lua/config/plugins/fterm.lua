@@ -14,8 +14,8 @@ return {
 
     -- 2. Create a Keybinding (Alt + i) 
     -- 'n' is for Normal mode, 't' is for Terminal mode (so you can close it too)
-    vim.keymap.set('n', '<leader>tt', fterm.toggle, { desc = 'Toggle Terminal' })
-    vim.keymap.set('t', '<leader>tt', fterm.toggle, { desc = 'Toggle Terminal' })
+    vim.keymap.set('n', '<leader>t', fterm.toggle, { desc = 'Toggle Terminal' })
+    vim.keymap.set('t', '<C-q>', fterm.toggle, { desc = 'Toggle Terminal' })
 
     -- 3. Create the :FTermToggle command so it shows up in your command bar
     vim.api.nvim_create_user_command('FTermToggle', fterm.toggle, {})

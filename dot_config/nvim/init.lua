@@ -70,3 +70,17 @@ require('config.lazy')
 --- Final Steps
 --------------------------------------------------------------------------------
 vim.cmd('set showtabline=0') -- Hide buffers names as we use telescope
+
+-- Make the Neo-Tree popup windows look nicer:
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = function()
+    -- Links popup background to your statusline background
+    vim.api.nvim_set_hl(0, "NormalFloat", { link = "StatusLine" })
+    -- Links popup borders to standard window separators
+    vim.api.nvim_set_hl(0, "FloatBorder", { link = "WinSeparator" })
+  end,
+})
+
+-- Run the above immediately for current session
+vim.api.nvim_set_hl(0, "NormalFloat", { link = "StatusLine" })
+vim.api.nvim_set_hl(0, "FloatBorder", { link = "WinSeparator" })
