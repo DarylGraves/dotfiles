@@ -32,6 +32,11 @@ return {
       },
       filesystem = {
         clean_abandoned_buffers = true,
+        follow_current_file = {
+          enabled = true,
+          leave_dirs_open = false,
+        },
+        use_libuv_file_watcher = true,
       }
     },
     config = function(_, opts)
