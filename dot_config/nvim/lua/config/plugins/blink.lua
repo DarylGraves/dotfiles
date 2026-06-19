@@ -25,9 +25,6 @@ return {
 
     sources = {
       default = { 'lsp', 'path', 'snippets', 'buffer' },
-      providers = {
-        snippets = { score_offset = 10 },
-      },
     },
 
     fuzzy = { implementation = 'prefer_rust' },
