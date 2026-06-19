@@ -3,7 +3,6 @@ return {
     'stevearc/conform.nvim',
     opts = {
       formatters_by_ft = {
-        cs = { 'csharpier' }, -- dotnet tool install -g csharpier
         lua = { 'stylua' },
         python = { 'isort', 'black' },
         rust = { 'rustfmt', lsp_format = 'fallback' },

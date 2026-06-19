@@ -29,12 +29,14 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 
 -- Ctrl-Z seems to minimise nvim and go back to the terminal so disabling
-vim.keymap.set({'n', 'v', 'i'}, '<C-z>', '<Nop>')
+vim.keymap.set({ 'n', 'v', 'i' }, '<C-z>', '<Nop>')
 
 -- Tab between buffers
 vim.keymap.set('n', '<Tab>', ':bnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':bprev<CR>')
 
+-- Remove highlights when pushing escape
+vim.keymap.set('n', '<escape>', ':nohlsearch<CR>')
 --------------------------------------------------------------------------------
 --- Settings
 --------------------------------------------------------------------------------
@@ -44,15 +46,15 @@ vim.o.cursorline = true -- Highlights the line you're on
 vim.o.termguicolors = true
 
 vim.o.breakindent = true -- When text wraps to the next line, honours the indent
-vim.o.confirm = true -- Prompt for confirmation if closing without saving
-vim.o.ignorecase = true -- Make searches case-insensitive
-vim.o.mouse = 'a' -- Enable the mouse
-vim.o.scrolloff = 10 -- Scroll down when x numbers of lines left
-vim.o.showmode = false -- Shows "INSERT", etc. Mini sets this to false
+vim.o.confirm = true     -- Prompt for confirmation if closing without saving
+vim.o.ignorecase = true  -- Make searches case-insensitive
+vim.o.mouse = 'a'        -- Enable the mouse
+vim.o.scrolloff = 10     -- Scroll down when x numbers of lines left
+vim.o.showmode = false   -- Shows "INSERT", etc. Mini sets this to false
 vim.o.signcolumn = 'yes' -- Needed for git signs or the column will keep moving
-vim.o.smartcase = true -- If you start using upper case then go case sensitive
-vim.o.undofile = true -- Persist undos across edit sessions by saving to file
-vim.o.updatetime = 200 -- How quick things update after typing. Fast is better
+vim.o.smartcase = true   -- If you start using upper case then go case sensitive
+vim.o.undofile = true    -- Persist undos across edit sessions by saving to file
+vim.o.updatetime = 200   -- How quick things update after typing. Fast is better
 
 -- Force splits in the right place
 vim.o.splitbelow = true
@@ -63,10 +65,28 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 vim.o.tabstop = 4
 
+vim.opt.foldmethod= "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldlevel = 99
+
 --------------------------------------------------------------------------------
 --- Lazy Plugin Manager
 --------------------------------------------------------------------------------
 require('config.lazy')
+
+--------------------------------------------------------------------------------
+--- Format on Save
+--------------------------------------------------------------------------------
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*",
+  callback = function(args)
+    require("conform").format({
+      bufnr = args.buf,
+      async = false, -- Must be false for BufWritePre
+      lsp_fallback = true,
+    })
+  end,
+})
 
 --------------------------------------------------------------------------------
 --- Final Steps
