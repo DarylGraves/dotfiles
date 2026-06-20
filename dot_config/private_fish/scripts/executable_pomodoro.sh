@@ -3,7 +3,9 @@
 #  🍅 Pomodoro Timer
 #  Usage: ./pomodoro.sh [work_mins] [short_break] [long_break] [sessions_before_long]
 #  Defaults: 25 / 5 / 15 / 4
-#  Press Space or p to pause/resume during a countdown
+#  During a countdown:
+#    Space / p  → pause/resume
+#    n / s      → skip to the next phase
 # ─────────────────────────────────────────────
 
 # Safe integer parse: strip non-digits, return default if empty/zero
@@ -24,6 +26,7 @@ LONG_EVERY=$(parse_int "${4}" 4)
 
 session=0
 paused=0
+SKIP=0   # set to 1 by countdown when the user skips the current phase
 
 # ── Colors ──────────────────────────────────
 RED='\033[0;31m'
@@ -46,61 +49,48 @@ notify() {
 
 bell() { printf '\a'; }
 
-# ── Countdown with pause support ─────────────
+# ── Countdown with pause + skip support ──────
+# Sets global SKIP=1 if the user skipped, 0 if it finished naturally.
 countdown() {
   local total_secs=$(( $1 * 60 ))
   local label="$2"
   local color="$3"
   local remaining=$total_secs
+  local mins secs elapsed pct bar i key
   paused=0
+  SKIP=0
 
-  # Read keypresses without blocking the countdown
-  # We use a background read loop writing to a tmp file
-  local keyfile
-  keyfile=$(mktemp)
-
-  # Put terminal in raw mode so Space is caught instantly
+  # Put terminal in raw mode so keys are caught instantly
   local old_stty
   old_stty=$(stty -g)
   stty -echo -icanon min 0 time 0
-
-  # Cleanup on exit
-  local cleanup="stty '$old_stty'; rm -f '$keyfile'"
-  trap "$cleanup" RETURN
+  trap "stty '$old_stty'" RETURN
 
   while (( remaining > 0 )); do
-    # Check for keypress
-    local key
+    # Read a keypress (non-blocking) — works even while paused
     key=$(dd bs=1 count=1 2>/dev/null < /dev/tty)
-    if [[ "$key" == " " || "$key" == "p" || "$key" == "P" ]]; then
-      paused=$(( 1 - paused ))
-    fi
+    case "$key" in
+      " "|p|P) paused=$(( 1 - paused )) ;;
+      n|N|s|S) SKIP=1; break ;;
+    esac
+
+    mins=$(( remaining / 60 ))
+    secs=$(( remaining % 60 ))
+    elapsed=$(( total_secs - remaining ))
+    pct=$(( elapsed * 20 / total_secs ))
+    bar=""
+    for (( i=0; i<20; i++ )); do
+      (( i < pct )) && bar+="█" || bar+="░"
+    done
 
     if (( paused )); then
-      local mins=$(( remaining / 60 ))
-      local secs=$(( remaining % 60 ))
-      local elapsed=$(( total_secs - remaining ))
-      local pct=$(( elapsed * 20 / total_secs ))
-      local bar=""
-      for (( i=0; i<20; i++ )); do
-        (( i < pct )) && bar+="█" || bar+="░"
-      done
-      printf "\r  ${YLW}${BLD}%-14s${RST}  ${DIM}[%s]${RST}  %02d:%02d  ${YLW}⏸ PAUSED${RST}  " \
+      printf "\r  ${YLW}${BLD}%-14s${RST}  ${DIM}[%s]${RST}  %02d:%02d  ${YLW}⏸ PAUSED${RST}  ${DIM}[n]ext${RST} " \
         "$label" "$bar" "$mins" "$secs"
       sleep 0.2
       continue
     fi
 
-    local mins=$(( remaining / 60 ))
-    local secs=$(( remaining % 60 ))
-    local elapsed=$(( total_secs - remaining ))
-    local pct=$(( elapsed * 20 / total_secs ))
-    local bar=""
-    for (( i=0; i<20; i++ )); do
-      (( i < pct )) && bar+="█" || bar+="░"
-    done
-
-    printf "\r  ${color}${BLD}%-14s${RST}  ${color}[%s]${RST}  %02d:%02d  ${DIM}[p] pause${RST}   " \
+    printf "\r  ${color}${BLD}%-14s${RST}  ${color}[%s]${RST}  %02d:%02d  ${DIM}[p]ause [n]ext${RST} " \
       "$label" "$bar" "$mins" "$secs"
 
     sleep 1
@@ -108,7 +98,6 @@ countdown() {
   done
 
   stty "$old_stty"
-  rm -f "$keyfile"
   printf "\r%-70s\r" ""   # clear line
 }
 
@@ -127,21 +116,29 @@ while true; do
 
   # Work
   countdown "$WORK_MINS" "🍅 Focus" "$RED"
-  bell
-  printf "  ${GRN}${BLD}Work done!${RST}\n"
-  notify "🍅 Pomodoro" "Work session $session complete — take a break!"
+  if (( SKIP )); then
+    printf "  ${DIM}⏭  skipped to break${RST}\n"
+  else
+    bell
+    printf "  ${GRN}${BLD}Work done!${RST}\n"
+    notify "🍅 Pomodoro" "Work session $session complete — take a break!"
+  fi
 
   # Pick break length
   if (( session % LONG_EVERY == 0 )); then
     printf "  ${BLU}${BLD}Long break (%d min)…${RST}\n" "$LONG_BREAK"
     countdown "$LONG_BREAK" "☕ Long break" "$BLU"
-    notify "🍅 Pomodoro" "Long break over — back to work!"
+    (( SKIP )) || notify "🍅 Pomodoro" "Long break over — back to work!"
   else
     printf "  ${GRN}${BLD}Short break (%d min)…${RST}\n" "$SHORT_BREAK"
     countdown "$SHORT_BREAK" "🌿 Short break" "$GRN"
-    notify "🍅 Pomodoro" "Break over — ready to focus!"
+    (( SKIP )) || notify "🍅 Pomodoro" "Break over — ready to focus!"
   fi
 
-  bell
+  if (( SKIP )); then
+    printf "  ${DIM}⏭  skipped to next session${RST}\n"
+  else
+    bell
+  fi
   printf "\n"
 done
