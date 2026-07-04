@@ -6,7 +6,6 @@ return {
     -- This waits until the plugin is fully installed/loaded
     local status, configs = pcall(require, "nvim-treesitter.configs")
     if not status then
-      vim.notify("Treesitter configs not found, skipping setup", vim.log.levels.WARN)
       return
     end
 
