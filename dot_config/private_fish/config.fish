@@ -7,6 +7,7 @@ if status is-interactive
 	set -gx EDITOR nvim
 	set -gx VISUAL nvim
 	set -gx KUBECONFIG ~/.kube/config
+	fish_add_path /opt/nvim/
 
 
 	if type -q kubectl
