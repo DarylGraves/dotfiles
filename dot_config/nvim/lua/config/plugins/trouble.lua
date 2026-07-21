@@ -9,6 +9,10 @@ return {
         },
       },
       todo = {
+        win = {
+          position = "right",
+          size = 120,
+        },
         keys = {
           ["<cr>"] = "jump_close",
         },

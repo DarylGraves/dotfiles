@@ -66,8 +66,10 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.o.tabstop = 4
 
 vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldexpr = "v:lua.vim.lsp.foldexpr()"
+vim.opt.foldenable = true
 vim.opt.foldlevel = 99
+vim.opt.foldtext = "v:lua.MyFoldText()"
 
 --------------------------------------------------------------------------------
 --- Lazy Plugin Manager
@@ -87,6 +89,34 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     })
   end,
 })
+
+--------------------------------------------------------------------------------
+--- Fold Logic (Default Folds look ugly)
+--------------------------------------------------------------------------------
+-- Change the fold fill character to a space
+vim.opt.fillchars = {
+  fold = " ",
+  foldopen = "",
+  foldclose = "",
+}
+
+-- Update option to accept the highlight group return
+vim.opt.foldtext = "v:lua.MyFoldText()"
+
+-- -- Force Folded background to match Normal background
+-- -- 'guibg=NONE' removes the white background
+-- -- 'guifg=Gray' makes the text a neutral color
+vim.api.nvim_set_hl(0, 'Folded', { fg = '#888888', bg = 'NONE', italic = true })
+--
+function _G.MyFoldText()
+  local line = vim.fn.getline(vim.v.foldstart)
+  local line_count = vim.v.foldend - vim.v.foldstart + 1
+  -- Strips leading whitespace for a cleaner look
+  line = line:gsub("^%s+", "")
+
+  -- Returns a concise format: ClassName ... [5 lines]
+  return " 󰅂 " .. line .. " ... 󰁂 " .. line_count .. " lines"
+end
 
 --------------------------------------------------------------------------------
 --- Final Steps
