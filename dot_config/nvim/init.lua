@@ -114,7 +114,6 @@ function _G.MyFoldText()
   -- Strips leading whitespace for a cleaner look
   line = line:gsub("^%s+", "")
 
-  -- Returns a concise format: ClassName ... [5 lines]
   return " 󰅂 " .. line .. " ... 󰁂 " .. line_count .. " lines"
 end
 
