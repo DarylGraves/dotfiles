@@ -28,6 +28,14 @@ return {
     },
 
     fuzzy = { implementation = 'prefer_rust' },
+
+    signature = {
+      enabled = false,
+      window = {
+        border = "single",
+        show_documentation = true,
+      }
+    }
   },
   opts_extend = { 'sources.default' },
 }
