@@ -12,7 +12,6 @@ return {
     keymaps = {
       next_signature = "<C-j>",     -- Cycle next overload
       previous_signature = "<C-k>", -- Cycle prev overload
-      close_signature = "<Esc>",
     },
     display_automatically = true,
   },
