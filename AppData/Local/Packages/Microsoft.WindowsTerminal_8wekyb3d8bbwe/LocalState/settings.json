@@ -147,7 +147,7 @@
             },
             {
                 "colorScheme": "ayu",
-                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -NoLogo",
+                "commandline": "pwsh.exe -NoLogo",
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
