@@ -117,6 +117,11 @@ Set-Alias -Name "adg" -Value "Get-AdGroup"
 Set-Alias -Name "adgm" -Value "Get-AdGroupMember"
 Set-Alias -Name "adp" -Value "Get-AdPrincipalGroupMembership"
 
+if(Get-Command bat.exe)
+{
+	Set-Alias -Name "bat" -Value "bat.exe"
+}
+
 #################################################
 # Functions
 #################################################
