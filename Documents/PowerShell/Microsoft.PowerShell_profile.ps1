@@ -119,7 +119,7 @@ Set-Alias -Name "adp" -Value "Get-AdPrincipalGroupMembership"
 
 if(Get-Command bat.exe)
 {
-	Set-Alias -Name "bat" -Value "bat.exe"
+	Set-Alias -Name "cat" -Value "bat.exe"
 }
 
 #################################################
