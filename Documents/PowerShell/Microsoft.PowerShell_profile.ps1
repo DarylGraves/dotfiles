@@ -17,6 +17,9 @@ if (-not (Test-Path "$HOME\AppData\Local\nvim")) {
 	New-Item -ItemType Junction -Path "$HOME\AppData\Local\nvim" -Target "$HOME\.config\nvim"
 }
 
+# Configure Chezmoi to use Nvim for edits
+[Environment]::SetEnvironmentVariable("EDITOR", "nvim", "User")
+
 #################################################
 # New Machine - Install Software if personal
 #################################################
