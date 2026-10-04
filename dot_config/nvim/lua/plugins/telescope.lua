@@ -27,7 +27,6 @@ return {
 
 			pcall(require("telescope").load_extension, "fzf")
 
-			-- Force all Telescope areas to respect your background color
 			local groups = {
 				"TelescopeNormal",
 				"TelescopeBorder",
