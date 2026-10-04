@@ -18,7 +18,7 @@ if (-not (Test-Path "$HOME\AppData\Local\nvim")) {
 }
 
 # Configure Chezmoi to use Nvim for edits
-[Environment]::SetEnvironmentVariable("EDITOR", "nvim", "User")
+[System.Environment]::SetEnvironmentVariable("EDITOR", "nvim", [System.EnvironmentVariableTarget]::User)
 
 #################################################
 # New Machine - Install Software if personal
