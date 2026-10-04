@@ -20,6 +20,11 @@ if (-not (Test-Path "$HOME\AppData\Local\nvim")) {
 # Configure Chezmoi to use Nvim for edits
 $Env:Editor = "nvim"
 
+if(Get-Command "fastfetch" -ErrorAction SilentlyContinue)
+{
+	fastfetch
+}
+
 #################################################
 # New Machine - Install Software if personal
 #################################################
