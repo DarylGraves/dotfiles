@@ -10,9 +10,6 @@ if status is-interactive
 	set -gx VISUAL nvim
 	set -gx KUBECONFIG ~/.kube/config
 
-	# Kubectl autocompletion
-	kubectl completion fish | source
-
 	# For nvim
 	fish_add_path /opt/nvim/
 
