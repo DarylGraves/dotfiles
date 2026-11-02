@@ -1,3 +1,8 @@
+# Note: To sync to a computer where Profile is in OneDrive, create a junction:
+# $Source = "PATHTO\Microsoft.PowerShell_profile.ps1"
+# $Target = "PATHTO-ONEDRIVEVERSION\Microsoft.PowerShell_profile.ps1"
+# New-Item -ItemType HardLink -Path $Target -Target $Source -Force
+
 $BaseRegistryPath = "HKCU:\Software\PowerShell\Profile\"
 
 if (!(Test-Path -Path $BaseRegistryPath)) {
@@ -165,3 +170,4 @@ $WorkSpecificProfilePath = "C:\Users\dagraves\Documents\PowerShell\WorkSpecificP
 if (Test-Path -Path $WorkSpecificProfilePath) {
 	. $WorkSpecificProfilePath
 }
+
