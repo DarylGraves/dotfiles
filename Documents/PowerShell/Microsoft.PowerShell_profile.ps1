@@ -67,7 +67,7 @@ if ($NewMachine -eq 1) {
 #################################################
 try {
 	$env:Path += ";C:\Users\$Env:USERNAME\AppData\Local\Programs\oh-my-posh\bin"
-	oh-my-posh init pwsh --config "C:\Users\$Env:USERNAME\AppData\Local\Programs\oh-my-posh\themes\slim.omp.json" | Invoke-Expression
+	oh-my-posh init pwsh --config "C:\Users\$Env:USERNAME\AppData\Local\Programs\oh-my-posh\themes\dgtheme.omp.json" | Invoke-Expression
 }
 catch {
 	Write-Error "OhMyPosh not installed. Run the below and restart the terminal:`n`twinget install JanDeDobbeleer.OhMyPosh -s winget"
