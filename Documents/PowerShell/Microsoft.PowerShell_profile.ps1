@@ -150,10 +150,18 @@ function hosts {
 }
 
 # Uses the alias "Sub" and allows us to change sub and update env var
+$env:POSH_AZURE_SUBSCRIPTION = (Get-ItemProperty -Path 'HKCU:\Software\PowerShell\Profile').AzureSubscription
 function Change-AzureDgSubscription {
-	$context = Set-AzContext @args
-	$env:POSH_AZURE_SUBSCRIPTION = $context.Subscription.Name
-	$context
+    $context = Set-AzContext @args
+
+    Set-ItemProperty `
+        -Path 'HKCU:\Software\PowerShell\Profile' `
+        -Name 'AzureSubscription' `
+        -Value $context.Subscription.Name
+
+    $env:POSH_AZURE_SUBSCRIPTION = $context.Subscription.Name
+
+    $context
 }
 
 #################################################
