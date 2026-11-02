@@ -1,4 +1,4 @@
-# Note: To sync to a computer where Profile is in OneDrive, create a junction:
+# Note: To sync to a computer where Profile is in OneDrive, create a junction after the file exists!
 # $Source = "PATHTO\Microsoft.PowerShell_profile.ps1"
 # $Target = "PATHTO-ONEDRIVEVERSION\Microsoft.PowerShell_profile.ps1"
 # New-Item -ItemType HardLink -Path $Target -Target $Source -Force
