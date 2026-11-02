@@ -116,6 +116,7 @@ Set-Alias -Name "adu" -Value "Get-AdUser"
 Set-Alias -Name "adg" -Value "Get-AdGroup"
 Set-Alias -Name "adgm" -Value "Get-AdGroupMember"
 Set-Alias -Name "adp" -Value "Get-AdPrincipalGroupMembership"
+Set-Alias -Name "v" -Value "nvim"
 
 if(Get-Command bat.exe)
 {
