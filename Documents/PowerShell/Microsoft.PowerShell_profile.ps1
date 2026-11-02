@@ -119,7 +119,7 @@ Set-Alias -Name "adp" -Value "Get-AdPrincipalGroupMembership"
 Set-Alias -Name "v" -Value "nvim"
 Set-Alias -Name "sub" -Value "Change-AzureDgSubscription"
 
-if(Get-Command bat.exe)
+if(Get-Command bat.exe -ErrorAction SilentlyContinue)
 {
 	Set-Alias -Name "cat" -Value "bat.exe"
 }
