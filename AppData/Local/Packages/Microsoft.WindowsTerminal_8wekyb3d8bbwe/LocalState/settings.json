@@ -5,21 +5,22 @@
     [
         {
             "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
+            "id": "User.paste"
         },
         {
             "command": "closePane",
-            "id": "User.closePane",
-            "keys": "alt+shift+w"
+            "id": "User.closePane"
+        },
+        {
+            "command": "scrollDownPage",
+            "id": "User.scrollDownPage"
         },
         {
             "command": 
             {
                 "action": "prevTab"
             },
-            "id": "User.prevTab.0",
-            "keys": "ctrl+shift+tab"
+            "id": "User.prevTab.0"
         },
         {
             "command": 
@@ -27,36 +28,14 @@
                 "action": "copy",
                 "singleLine": false
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
-            "command": 
-            {
-                "action": "scrollDown"
-            },
-            "id": "User.scrollDown.0",
-            "keys": "ctrl+down"
-        },
-        {
-            "command": 
-            {
-                "action": "scrollDown"
-            },
-            "keys": "ctrl+j"
+            "id": "User.copy.644BA8F2"
         },
         {
             "command": 
             {
                 "action": "renameTab"
             },
-            "id": "User.renameTab.C5EEC4D3",
-            "keys": "ctrl+shift+n"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "id": "User.renameTab.C5EEC4D3"
         },
         {
             "command": 
@@ -65,56 +44,98 @@
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "User.splitPane.A6751878"
         },
         {
-            "command": "unbound",
-            "keys": "alt+shift+r"
-        },
-        {
-            "command": "scrollDownPage",
-            "id": "User.scrollDownPage",
-            "keys": "ctrl+shift+down"
-        },
-        {
-            "command": 
-            {
-                "action": "scrollUp"
-            },
-            "id": "User.scrollUp.0",
-            "keys": "ctrl+k"
-        },
-        {
-            "command": 
-            {
-                "action": "scrollUp"
-            },
-            "keys": "ctrl+up"
+            "command": "find",
+            "id": "User.find"
         },
         {
             "command": "scrollUpPage",
-            "id": "User.scrollUpPage",
-            "keys": "ctrl+shift+up"
+            "id": "User.scrollUpPage"
         },
         {
             "command": 
             {
                 "action": "nextTab"
             },
-            "id": "User.nextTab.0",
-            "keys": "ctrl+tab"
+            "id": "User.nextTab.0"
         },
         {
             "command": "openTabColorPicker",
-            "id": "User.openTabColorPicker",
-            "keys": "ctrl+shift+c"
+            "id": "User.openTabColorPicker"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "multiLinePasteWarning": false,
+    "keybindings": 
+    [
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.closePane",
+            "keys": "alt+shift+w"
+        },
+        {
+            "id": "User.prevTab.0",
+            "keys": "ctrl+shift+tab"
+        },
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.ScrollDown",
+            "keys": "ctrl+down"
+        },
+        {
+            "id": "Terminal.ScrollDown",
+            "keys": "ctrl+j"
+        },
+        {
+            "id": "User.renameTab.C5EEC4D3",
+            "keys": "ctrl+shift+n"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+r"
+        },
+        {
+            "id": "User.scrollDownPage",
+            "keys": "ctrl+shift+down"
+        },
+        {
+            "id": "Terminal.ScrollUp",
+            "keys": "ctrl+k"
+        },
+        {
+            "id": "Terminal.ScrollUp",
+            "keys": "ctrl+up"
+        },
+        {
+            "id": "User.scrollUpPage",
+            "keys": "ctrl+shift+up"
+        },
+        {
+            "id": "User.nextTab.0",
+            "keys": "ctrl+tab"
+        },
+        {
+            "id": "User.openTabColorPicker",
+            "keys": "ctrl+shift+c"
+        }
+    ],
     "newTabMenu": 
     [
         {
@@ -146,7 +167,7 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "colorScheme": "ayu",
+                "colorScheme": "Symfonic",
                 "commandline": "pwsh.exe -NoLogo",
                 "experimental.retroTerminalEffect": false,
                 "font": 
@@ -313,5 +334,6 @@
             "yellow": "#FDF834"
         }
     ],
-    "themes": []
+    "themes": [],
+    "warning.multiLinePaste": "never"
 }
