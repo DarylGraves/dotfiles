@@ -117,6 +117,7 @@ Set-Alias -Name "adg" -Value "Get-AdGroup"
 Set-Alias -Name "adgm" -Value "Get-AdGroupMember"
 Set-Alias -Name "adp" -Value "Get-AdPrincipalGroupMembership"
 Set-Alias -Name "v" -Value "nvim"
+Set-Alias -Name "sub" -Value "Change-AzureDgSubscription"
 
 if(Get-Command bat.exe)
 {
@@ -140,6 +141,13 @@ function nvim {
 
 function hosts {
 	nvim "C:\Windows\System32\drivers\etc\hosts"
+}
+
+# Uses the alias "Sub" and allows us to change sub and update env var
+function Change-AzureDgSubscription {
+	$context = Set-AzContext @args
+	$env:POSH_AZURE_SUBSCRIPTION = $context.Subscription.Name
+	$context
 }
 
 #################################################
