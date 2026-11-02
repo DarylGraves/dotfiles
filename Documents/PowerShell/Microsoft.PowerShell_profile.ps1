@@ -117,12 +117,13 @@ if((Get-Command "fzf" -ErrorAction SilentlyContinue ).count -gt 0)
 #################################################
 # Aliases
 #################################################
-Set-Alias -Name "adu" -Value "Get-AdUser"
+Set-Alias -Name "adc" -Value "Get-AdComputer"
 Set-Alias -Name "adg" -Value "Get-AdGroup"
 Set-Alias -Name "adgm" -Value "Get-AdGroupMember"
+Set-Alias -Name "adu" -Value "Get-AdUser"
 Set-Alias -Name "adp" -Value "Get-AdPrincipalGroupMembership"
+Set-Alias -Name "sub" -Value "Change-AzureDgSubscription" # Stores result in OhMyPosh
 Set-Alias -Name "v" -Value "nvim"
-Set-Alias -Name "sub" -Value "Change-AzureDgSubscription"
 
 if(Get-Command bat.exe -ErrorAction SilentlyContinue)
 {
@@ -164,7 +165,6 @@ Import-Module Terminal-Icons
 # Work Specific - Seperate so it doesn't sync 
 #################################################
 $ProfilePath = Split-Path -Path $Profile -Parent
-$WorkProfile = "C:\Users\dagraves\Documents\PowerShell"
 $WorkSpecificProfilePath = "C:\Users\dagraves\Documents\PowerShell\WorkSpecificProfile.ps1"
 
 if (Test-Path -Path $WorkSpecificProfilePath) {
